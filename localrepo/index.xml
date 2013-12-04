@@ -1,5 +1,1355 @@
 <?xml version='1.0' encoding='utf-8'?>
-<repository increment='1382796632474' name='Local' xmlns='http://www.osgi.org/xmlns/repository/v1.0.0'>
+<repository increment='1385994931681' name='Local' xmlns='http://www.osgi.org/xmlns/repository/v1.0.0'>
+  <resource>
+    <capability namespace='osgi.identity'>
+      <attribute name='osgi.identity' value='org.eclipse.jetty.io'/>
+      <attribute name='type' value='osgi.bundle'/>
+      <attribute name='version' type='Version' value='9.0.6.v20130930'/>
+    </capability>
+    <capability namespace='osgi.content'>
+      <attribute name='osgi.content' value='914ef94236861da5157da98cc462fdcfca18d5b0d4717767ce2376272143acf3'/>
+      <attribute name='url' value='org.eclipse.jetty.io/org.eclipse.jetty.io-9.0.6.jar'/>
+      <attribute name='size' type='Long' value='86101'/>
+      <attribute name='mime' value='application/vnd.osgi.bundle'/>
+    </capability>
+    <capability namespace='osgi.wiring.bundle'>
+      <attribute name='osgi.wiring.bundle' value='org.eclipse.jetty.io'/>
+      <attribute name='bundle-version' type='Version' value='9.0.6.v20130930'/>
+    </capability>
+    <capability namespace='osgi.wiring.host'>
+      <attribute name='osgi.wiring.host' value='org.eclipse.jetty.io'/>
+      <attribute name='bundle-version' type='Version' value='9.0.6.v20130930'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.eclipse.jetty.io.ssl'/>
+      <attribute name='version' type='Version' value='9.0.6'/>
+      <attribute name='bundle-symbolic-name' value='org.eclipse.jetty.io'/>
+      <attribute name='bundle-version' type='Version' value='9.0.6.v20130930'/>
+      <directive name='uses' value='org.eclipse.jetty.io,javax.net.ssl,org.eclipse.jetty.util.log,org.eclipse.jetty.util,org.eclipse.jetty.util.thread'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.eclipse.jetty.io'/>
+      <attribute name='version' type='Version' value='9.0.6'/>
+      <attribute name='bundle-symbolic-name' value='org.eclipse.jetty.io'/>
+      <attribute name='bundle-version' type='Version' value='9.0.6.v20130930'/>
+      <directive name='uses' value='org.eclipse.jetty.util,org.eclipse.jetty.util.log,org.eclipse.jetty.util.thread,org.eclipse.jetty.util.component'/>
+    </capability>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.net.ssl)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.eclipse.jetty.util)(version&gt;=9.0.0)(!(version&gt;=10.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.eclipse.jetty.util.component)(version&gt;=9.0.0)(!(version&gt;=10.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.eclipse.jetty.util.log)(version&gt;=9.0.0)(!(version&gt;=10.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.eclipse.jetty.util.thread)(version&gt;=9.0.0)(!(version&gt;=10.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.ee'>
+      <directive name='filter' value='(osgi.ee=JavaSE-1.7)'/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace='osgi.identity'>
+      <attribute name='osgi.identity' value='jackson-core-asl'/>
+      <attribute name='type' value='osgi.bundle'/>
+      <attribute name='version' type='Version' value='1.9.13'/>
+    </capability>
+    <capability namespace='osgi.content'>
+      <attribute name='osgi.content' value='440a9cb5ca95b215f953d3a20a6b1a10da1f09b529a9ddea5f8a4905ddab4f5a'/>
+      <attribute name='url' value='jackson-core-asl/jackson-core-asl-1.9.13.jar'/>
+      <attribute name='size' type='Long' value='232248'/>
+      <attribute name='mime' value='application/vnd.osgi.bundle'/>
+    </capability>
+    <capability namespace='osgi.wiring.bundle'>
+      <attribute name='osgi.wiring.bundle' value='jackson-core-asl'/>
+      <attribute name='bundle-version' type='Version' value='1.9.13'/>
+    </capability>
+    <capability namespace='osgi.wiring.host'>
+      <attribute name='osgi.wiring.host' value='jackson-core-asl'/>
+      <attribute name='bundle-version' type='Version' value='1.9.13'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.codehaus.jackson.format'/>
+      <attribute name='version' type='Version' value='1.9.13'/>
+      <attribute name='bundle-symbolic-name' value='jackson-core-asl'/>
+      <attribute name='bundle-version' type='Version' value='1.9.13'/>
+      <directive name='uses' value='org.codehaus.jackson.io,org.codehaus.jackson'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.codehaus.jackson.io'/>
+      <attribute name='version' type='Version' value='1.9.13'/>
+      <attribute name='bundle-symbolic-name' value='jackson-core-asl'/>
+      <attribute name='bundle-version' type='Version' value='1.9.13'/>
+      <directive name='uses' value='org.codehaus.jackson.util,org.codehaus.jackson'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.codehaus.jackson.sym'/>
+      <attribute name='version' type='Version' value='1.9.13'/>
+      <attribute name='bundle-symbolic-name' value='jackson-core-asl'/>
+      <attribute name='bundle-version' type='Version' value='1.9.13'/>
+      <directive name='uses' value='org.codehaus.jackson.util'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.codehaus.jackson.util'/>
+      <attribute name='version' type='Version' value='1.9.13'/>
+      <attribute name='bundle-symbolic-name' value='jackson-core-asl'/>
+      <attribute name='bundle-version' type='Version' value='1.9.13'/>
+      <directive name='uses' value='org.codehaus.jackson.io,org.codehaus.jackson.impl,org.codehaus.jackson'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.codehaus.jackson.annotate'/>
+      <attribute name='version' type='Version' value='1.9.13'/>
+      <attribute name='bundle-symbolic-name' value='jackson-core-asl'/>
+      <attribute name='bundle-version' type='Version' value='1.9.13'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.codehaus.jackson.impl'/>
+      <attribute name='version' type='Version' value='1.9.13'/>
+      <attribute name='bundle-symbolic-name' value='jackson-core-asl'/>
+      <attribute name='bundle-version' type='Version' value='1.9.13'/>
+      <directive name='uses' value='org.codehaus.jackson.format,org.codehaus.jackson.io,org.codehaus.jackson.sym,org.codehaus.jackson.util,org.codehaus.jackson'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.codehaus.jackson'/>
+      <attribute name='version' type='Version' value='1.9.13'/>
+      <attribute name='bundle-symbolic-name' value='jackson-core-asl'/>
+      <attribute name='bundle-version' type='Version' value='1.9.13'/>
+      <directive name='uses' value='org.codehaus.jackson.format,org.codehaus.jackson.sym,org.codehaus.jackson.annotate,org.codehaus.jackson.impl,org.codehaus.jackson.type,org.codehaus.jackson.io,org.codehaus.jackson.util'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.codehaus.jackson.type'/>
+      <attribute name='version' type='Version' value='1.9.13'/>
+      <attribute name='bundle-symbolic-name' value='jackson-core-asl'/>
+      <attribute name='bundle-version' type='Version' value='1.9.13'/>
+    </capability>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.codehaus.jackson)(version&gt;=1.9.13))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.codehaus.jackson.annotate)(version&gt;=1.9.13))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.codehaus.jackson.format)(version&gt;=1.9.13))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.codehaus.jackson.impl)(version&gt;=1.9.13))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.codehaus.jackson.io)(version&gt;=1.9.13))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.codehaus.jackson.sym)(version&gt;=1.9.13))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.codehaus.jackson.type)(version&gt;=1.9.13))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.codehaus.jackson.util)(version&gt;=1.9.13))'/>
+    </requirement>
+    <requirement namespace='osgi.ee'>
+      <directive name='filter' value='(|(osgi.ee=J2SE-1.5)(osgi.ee=JavaSE-1.6))'/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace='osgi.identity'>
+      <attribute name='osgi.identity' value='org.eclipse.jetty.server'/>
+      <attribute name='type' value='osgi.bundle'/>
+      <attribute name='version' type='Version' value='9.0.6.v20130930'/>
+    </capability>
+    <capability namespace='osgi.content'>
+      <attribute name='osgi.content' value='1e67827467d833c4103a8907b0e5a90fbe4f76f37d5cc399581ec9dda1670bce'/>
+      <attribute name='url' value='org.eclipse.jetty.server/org.eclipse.jetty.server-9.0.6.jar'/>
+      <attribute name='size' type='Long' value='363113'/>
+      <attribute name='mime' value='application/vnd.osgi.bundle'/>
+    </capability>
+    <capability namespace='osgi.wiring.bundle'>
+      <attribute name='osgi.wiring.bundle' value='org.eclipse.jetty.server'/>
+      <attribute name='bundle-version' type='Version' value='9.0.6.v20130930'/>
+    </capability>
+    <capability namespace='osgi.wiring.host'>
+      <attribute name='osgi.wiring.host' value='org.eclipse.jetty.server'/>
+      <attribute name='bundle-version' type='Version' value='9.0.6.v20130930'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.eclipse.jetty.server'/>
+      <attribute name='version' type='Version' value='9.0.6'/>
+      <attribute name='bundle-symbolic-name' value='org.eclipse.jetty.server'/>
+      <attribute name='bundle-version' type='Version' value='9.0.6.v20130930'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.eclipse.jetty.server.jmx'/>
+      <attribute name='version' type='Version' value='9.0.6'/>
+      <attribute name='bundle-symbolic-name' value='org.eclipse.jetty.server'/>
+      <attribute name='bundle-version' type='Version' value='9.0.6.v20130930'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.eclipse.jetty.server.nio'/>
+      <attribute name='version' type='Version' value='9.0.6'/>
+      <attribute name='bundle-symbolic-name' value='org.eclipse.jetty.server'/>
+      <attribute name='bundle-version' type='Version' value='9.0.6.v20130930'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.eclipse.jetty.server.handler.jmx'/>
+      <attribute name='version' type='Version' value='9.0.6'/>
+      <attribute name='bundle-symbolic-name' value='org.eclipse.jetty.server'/>
+      <attribute name='bundle-version' type='Version' value='9.0.6.v20130930'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.eclipse.jetty.server.handler'/>
+      <attribute name='version' type='Version' value='9.0.6'/>
+      <attribute name='bundle-symbolic-name' value='org.eclipse.jetty.server'/>
+      <attribute name='bundle-version' type='Version' value='9.0.6.v20130930'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.eclipse.jetty.server.session'/>
+      <attribute name='version' type='Version' value='9.0.6'/>
+      <attribute name='bundle-symbolic-name' value='org.eclipse.jetty.server'/>
+      <attribute name='bundle-version' type='Version' value='9.0.6.v20130930'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.eclipse.jetty.server.session.jmx'/>
+      <attribute name='version' type='Version' value='9.0.6'/>
+      <attribute name='bundle-symbolic-name' value='org.eclipse.jetty.server'/>
+      <attribute name='bundle-version' type='Version' value='9.0.6.v20130930'/>
+    </capability>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.naming)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.net.ssl)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.security.auth)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=javax.servlet)(version&gt;=2.6.0))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=javax.servlet.descriptor)(version&gt;=2.6.0))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=javax.servlet.http)(version&gt;=2.6.0))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.sql)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.eclipse.jetty.http)(version&gt;=9.0.0)(!(version&gt;=10.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.eclipse.jetty.io)(version&gt;=9.0.0)(!(version&gt;=10.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.eclipse.jetty.io.ssl)(version&gt;=9.0.0)(!(version&gt;=10.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.eclipse.jetty.jmx)(version&gt;=9.0.0))'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.eclipse.jetty.util)(version&gt;=9.0.0)(!(version&gt;=10.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.eclipse.jetty.util.annotation)(version&gt;=9.0.0)(!(version&gt;=10.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.eclipse.jetty.util.component)(version&gt;=9.0.0)(!(version&gt;=10.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.eclipse.jetty.util.log)(version&gt;=9.0.0)(!(version&gt;=10.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.eclipse.jetty.util.resource)(version&gt;=9.0.0)(!(version&gt;=10.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.eclipse.jetty.util.ssl)(version&gt;=9.0.0)(!(version&gt;=10.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.eclipse.jetty.util.statistic)(version&gt;=9.0.0)(!(version&gt;=10.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.eclipse.jetty.util.thread)(version&gt;=9.0.0)(!(version&gt;=10.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.ee'>
+      <directive name='filter' value='(osgi.ee=JavaSE-1.7)'/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace='osgi.identity'>
+      <attribute name='osgi.identity' value='com.sun.mail.javax.mail'/>
+      <attribute name='type' value='osgi.bundle'/>
+      <attribute name='version' type='Version' value='1.4.5'/>
+    </capability>
+    <capability namespace='osgi.content'>
+      <attribute name='osgi.content' value='086e48bf9cd433369b259b82cdaa4c025d37eda6a8cae3eef605fce018421007'/>
+      <attribute name='url' value='com.sun.mail.javax.mail/com.sun.mail.javax.mail-1.4.5.jar'/>
+      <attribute name='size' type='Long' value='507849'/>
+      <attribute name='mime' value='application/vnd.osgi.bundle'/>
+    </capability>
+    <capability namespace='osgi.wiring.bundle'>
+      <attribute name='osgi.wiring.bundle' value='com.sun.mail.javax.mail'/>
+      <attribute name='bundle-version' type='Version' value='1.4.5'/>
+    </capability>
+    <capability namespace='osgi.wiring.host'>
+      <attribute name='osgi.wiring.host' value='com.sun.mail.javax.mail'/>
+      <attribute name='bundle-version' type='Version' value='1.4.5'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='javax.mail.internet'/>
+      <attribute name='version' type='Version' value='1.4.0'/>
+      <attribute name='bundle-symbolic-name' value='com.sun.mail.javax.mail'/>
+      <attribute name='bundle-version' type='Version' value='1.4.5'/>
+      <directive name='uses' value='com.sun.mail.util,javax.mail,javax.activation,javax.mail.util'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='javax.mail.util'/>
+      <attribute name='version' type='Version' value='1.4.0'/>
+      <attribute name='bundle-symbolic-name' value='com.sun.mail.javax.mail'/>
+      <attribute name='bundle-version' type='Version' value='1.4.5'/>
+      <directive name='uses' value='javax.activation,javax.mail.internet'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='javax.mail.search'/>
+      <attribute name='version' type='Version' value='1.4.0'/>
+      <attribute name='bundle-symbolic-name' value='com.sun.mail.javax.mail'/>
+      <attribute name='bundle-version' type='Version' value='1.4.5'/>
+      <directive name='uses' value='javax.mail.internet,javax.mail'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='javax.mail'/>
+      <attribute name='version' type='Version' value='1.4.0'/>
+      <attribute name='bundle-symbolic-name' value='com.sun.mail.javax.mail'/>
+      <attribute name='bundle-version' type='Version' value='1.4.5'/>
+      <directive name='uses' value='javax.mail.event,javax.mail.search,javax.activation,com.sun.mail.util'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='javax.mail.event'/>
+      <attribute name='version' type='Version' value='1.4.0'/>
+      <attribute name='bundle-symbolic-name' value='com.sun.mail.javax.mail'/>
+      <attribute name='bundle-version' type='Version' value='1.4.5'/>
+      <directive name='uses' value='javax.mail'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='com.sun.mail.imap'/>
+      <attribute name='version' type='Version' value='1.4.5'/>
+      <attribute name='bundle-symbolic-name' value='com.sun.mail.javax.mail'/>
+      <attribute name='bundle-version' type='Version' value='1.4.5'/>
+      <directive name='uses' value='com.sun.mail.iap,com.sun.mail.imap.protocol,javax.mail,javax.activation,com.sun.mail.util,javax.mail.internet,javax.mail.search,javax.mail.event'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='com.sun.mail.imap.protocol'/>
+      <attribute name='version' type='Version' value='1.4.5'/>
+      <attribute name='bundle-symbolic-name' value='com.sun.mail.javax.mail'/>
+      <attribute name='bundle-version' type='Version' value='1.4.5'/>
+      <directive name='uses' value='com.sun.mail.iap,com.sun.mail.util,javax.mail.internet,javax.mail,javax.mail.search,com.sun.mail.imap,javax.security.sasl,javax.security.auth.callback'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='com.sun.mail.iap'/>
+      <attribute name='version' type='Version' value='1.4.5'/>
+      <attribute name='bundle-symbolic-name' value='com.sun.mail.javax.mail'/>
+      <attribute name='bundle-version' type='Version' value='1.4.5'/>
+      <directive name='uses' value='com.sun.mail.util'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='com.sun.mail.pop3'/>
+      <attribute name='version' type='Version' value='1.4.5'/>
+      <attribute name='bundle-symbolic-name' value='com.sun.mail.javax.mail'/>
+      <attribute name='bundle-version' type='Version' value='1.4.5'/>
+      <directive name='uses' value='javax.mail,com.sun.mail.util,javax.mail.internet,javax.net.ssl,javax.mail.util'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='com.sun.mail.smtp'/>
+      <attribute name='version' type='Version' value='1.4.5'/>
+      <attribute name='bundle-symbolic-name' value='com.sun.mail.javax.mail'/>
+      <attribute name='bundle-version' type='Version' value='1.4.5'/>
+      <directive name='uses' value='com.sun.mail.util,javax.mail.internet,javax.mail,javax.security.sasl,javax.security.auth.callback'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='com.sun.mail.util'/>
+      <attribute name='version' type='Version' value='1.4.5'/>
+      <attribute name='bundle-symbolic-name' value='com.sun.mail.javax.mail'/>
+      <attribute name='bundle-version' type='Version' value='1.4.5'/>
+      <directive name='uses' value='javax.mail,javax.net.ssl,javax.mail.internet,javax.mail.util,sun.security.util,javax.net,javax.security.auth.x500'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='com.sun.mail.util.logging'/>
+      <attribute name='version' type='Version' value='1.4.5'/>
+      <attribute name='bundle-symbolic-name' value='com.sun.mail.javax.mail'/>
+      <attribute name='bundle-version' type='Version' value='1.4.5'/>
+      <directive name='uses' value='javax.mail,javax.mail.internet,javax.mail.util,javax.activation,com.sun.mail.smtp'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='com.sun.mail.handlers'/>
+      <attribute name='version' type='Version' value='1.4.5'/>
+      <attribute name='bundle-symbolic-name' value='com.sun.mail.javax.mail'/>
+      <attribute name='bundle-version' type='Version' value='1.4.5'/>
+      <directive name='uses' value='javax.activation,javax.mail.internet,javax.mail,javax.xml.transform,javax.xml.transform.stream'/>
+    </capability>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=com.sun.mail.handlers)(version&gt;=1.4.0))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=com.sun.mail.iap)(version&gt;=1.4.0))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=com.sun.mail.imap)(version&gt;=1.4.0))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=com.sun.mail.imap.protocol)(version&gt;=1.4.0))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=com.sun.mail.pop3)(version&gt;=1.4.0))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=com.sun.mail.smtp)(version&gt;=1.4.0))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=com.sun.mail.util)(version&gt;=1.4.0))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=com.sun.mail.util.logging)(version&gt;=1.4.0))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.activation)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.crypto)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.crypto.spec)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=javax.mail)(version&gt;=1.4.0))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=javax.mail.event)(version&gt;=1.4.0))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=javax.mail.internet)(version&gt;=1.4.0))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=javax.mail.search)(version&gt;=1.4.0))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=javax.mail.util)(version&gt;=1.4.0))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.net)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.net.ssl)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.security.auth.callback)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.security.auth.x500)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.security.sasl)'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.xml.transform)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.xml.transform.stream)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=sun.security.util)'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace='osgi.identity'>
+      <attribute name='osgi.identity' value='javax.servlet'/>
+      <attribute name='type' value='osgi.bundle'/>
+      <attribute name='version' type='Version' value='3.0.0.v201112011016'/>
+    </capability>
+    <capability namespace='osgi.content'>
+      <attribute name='osgi.content' value='a2cc192a076d9effd10becee8aacbe157f0fe2010fd4322e58aaeff198e56dbe'/>
+      <attribute name='url' value='javax.servlet/javax.servlet-3.0.0.jar'/>
+      <attribute name='size' type='Long' value='200387'/>
+      <attribute name='mime' value='application/vnd.osgi.bundle'/>
+    </capability>
+    <capability namespace='osgi.wiring.bundle'>
+      <attribute name='osgi.wiring.bundle' value='javax.servlet'/>
+      <attribute name='bundle-version' type='Version' value='3.0.0.v201112011016'/>
+    </capability>
+    <capability namespace='osgi.wiring.host'>
+      <attribute name='osgi.wiring.host' value='javax.servlet'/>
+      <attribute name='bundle-version' type='Version' value='3.0.0.v201112011016'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='javax.servlet'/>
+      <attribute name='version' type='Version' value='2.6.0'/>
+      <attribute name='bundle-symbolic-name' value='javax.servlet'/>
+      <attribute name='bundle-version' type='Version' value='3.0.0.v201112011016'/>
+      <directive name='uses' value='javax.servlet.annotation,javax.servlet.descriptor'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='javax.servlet.annotation'/>
+      <attribute name='version' type='Version' value='2.6.0'/>
+      <attribute name='bundle-symbolic-name' value='javax.servlet'/>
+      <attribute name='bundle-version' type='Version' value='3.0.0.v201112011016'/>
+      <directive name='uses' value='javax.servlet'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='javax.servlet.descriptor'/>
+      <attribute name='version' type='Version' value='2.6.0'/>
+      <attribute name='bundle-symbolic-name' value='javax.servlet'/>
+      <attribute name='bundle-version' type='Version' value='3.0.0.v201112011016'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='javax.servlet.http'/>
+      <attribute name='version' type='Version' value='2.6.0'/>
+      <attribute name='bundle-symbolic-name' value='javax.servlet'/>
+      <attribute name='bundle-version' type='Version' value='3.0.0.v201112011016'/>
+      <directive name='uses' value='javax.servlet'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='javax.servlet.resources'/>
+      <attribute name='version' type='Version' value='2.6.0'/>
+      <attribute name='bundle-symbolic-name' value='javax.servlet'/>
+      <attribute name='bundle-version' type='Version' value='3.0.0.v201112011016'/>
+    </capability>
+    <requirement namespace='osgi.ee'>
+      <directive name='filter' value='(osgi.ee=JavaSE-1.6)'/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace='osgi.identity'>
+      <attribute name='osgi.identity' value='com.orientechnologies.orientdb-enterprise'/>
+      <attribute name='type' value='osgi.bundle'/>
+      <attribute name='version' type='Version' value='1.5.1'/>
+    </capability>
+    <capability namespace='osgi.content'>
+      <attribute name='osgi.content' value='4a0a5da5bf1c98b0efb7ca11b49fc47283705880217b8a7b4e496a05d0afffc1'/>
+      <attribute name='url' value='com.orientechnologies.orientdb-enterprise/com.orientechnologies.orientdb-enterprise-1.5.1.jar'/>
+      <attribute name='size' type='Long' value='33969'/>
+      <attribute name='mime' value='application/vnd.osgi.bundle'/>
+    </capability>
+    <capability namespace='osgi.wiring.bundle'>
+      <attribute name='osgi.wiring.bundle' value='com.orientechnologies.orientdb-enterprise'/>
+      <attribute name='bundle-version' type='Version' value='1.5.1'/>
+    </capability>
+    <capability namespace='osgi.wiring.host'>
+      <attribute name='osgi.wiring.host' value='com.orientechnologies.orientdb-enterprise'/>
+      <attribute name='bundle-version' type='Version' value='1.5.1'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='com.orientechnologies.orient.enterprise.channel.binary'/>
+      <attribute name='version' type='Version' value='1.5.1'/>
+      <attribute name='bundle-symbolic-name' value='com.orientechnologies.orientdb-enterprise'/>
+      <attribute name='bundle-version' type='Version' value='1.5.1'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='com.orientechnologies.orient.enterprise.channel.text'/>
+      <attribute name='version' type='Version' value='1.5.1'/>
+      <attribute name='bundle-symbolic-name' value='com.orientechnologies.orientdb-enterprise'/>
+      <attribute name='bundle-version' type='Version' value='1.5.1'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='com.orientechnologies.orient.enterprise.channel'/>
+      <attribute name='version' type='Version' value='1.5.1'/>
+      <attribute name='bundle-symbolic-name' value='com.orientechnologies.orientdb-enterprise'/>
+      <attribute name='bundle-version' type='Version' value='1.5.1'/>
+    </capability>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.common.concur)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.common.concur.lock)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.common.concur.resource)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.common.exception)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.common.io)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.common.log)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.common.profiler)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.common.thread)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.common.util)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.core)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.core.config)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.core.db.record)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.core.exception)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.core.id)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.core.profiler)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.core.record)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.core.version)'/>
+    </requirement>
+    <requirement namespace='osgi.ee'>
+      <directive name='filter' value='(osgi.ee=JavaSE-1.6)'/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace='osgi.identity'>
+      <attribute name='osgi.identity' value='jackson-mapper-asl'/>
+      <attribute name='type' value='osgi.bundle'/>
+      <attribute name='version' type='Version' value='1.9.13'/>
+    </capability>
+    <capability namespace='osgi.content'>
+      <attribute name='osgi.content' value='74e7a07a76f2edbade29312a5a2ebccfa019128bc021ece3856d76197e9be0c2'/>
+      <attribute name='url' value='jackson-mapper-asl/jackson-mapper-asl-1.9.13.jar'/>
+      <attribute name='size' type='Long' value='780664'/>
+      <attribute name='mime' value='application/vnd.osgi.bundle'/>
+    </capability>
+    <capability namespace='osgi.wiring.bundle'>
+      <attribute name='osgi.wiring.bundle' value='jackson-mapper-asl'/>
+      <attribute name='bundle-version' type='Version' value='1.9.13'/>
+    </capability>
+    <capability namespace='osgi.wiring.host'>
+      <attribute name='osgi.wiring.host' value='jackson-mapper-asl'/>
+      <attribute name='bundle-version' type='Version' value='1.9.13'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.codehaus.jackson.schema'/>
+      <attribute name='version' type='Version' value='1.9.13'/>
+      <attribute name='bundle-symbolic-name' value='jackson-mapper-asl'/>
+      <attribute name='bundle-version' type='Version' value='1.9.13'/>
+      <directive name='uses' value='org.codehaus.jackson.node,org.codehaus.jackson.map,org.codehaus.jackson.annotate,org.codehaus.jackson'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.codehaus.jackson.map.deser.impl'/>
+      <attribute name='version' type='Version' value='1.9.13'/>
+      <attribute name='bundle-symbolic-name' value='jackson-mapper-asl'/>
+      <attribute name='bundle-version' type='Version' value='1.9.13'/>
+      <directive name='uses' value='org.codehaus.jackson.map.type,org.codehaus.jackson.type,org.codehaus.jackson.map.deser,org.codehaus.jackson.map,org.codehaus.jackson.util,org.codehaus.jackson.map.introspect,org.codehaus.jackson,org.codehaus.jackson.map.deser.std,org.codehaus.jackson.map.util'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.codehaus.jackson.map.exc'/>
+      <attribute name='version' type='Version' value='1.9.13'/>
+      <attribute name='bundle-symbolic-name' value='jackson-mapper-asl'/>
+      <attribute name='bundle-version' type='Version' value='1.9.13'/>
+      <directive name='uses' value='org.codehaus.jackson.map,org.codehaus.jackson'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.codehaus.jackson.map.annotate'/>
+      <attribute name='version' type='Version' value='1.9.13'/>
+      <attribute name='bundle-symbolic-name' value='jackson-mapper-asl'/>
+      <attribute name='bundle-version' type='Version' value='1.9.13'/>
+      <directive name='uses' value='org.codehaus.jackson.map,org.codehaus.jackson.annotate'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.codehaus.jackson.map.ser.std'/>
+      <attribute name='version' type='Version' value='1.9.13'/>
+      <attribute name='bundle-symbolic-name' value='jackson-mapper-asl'/>
+      <attribute name='bundle-version' type='Version' value='1.9.13'/>
+      <directive name='uses' value='org.codehaus.jackson.schema,org.codehaus.jackson.map.annotate,org.codehaus.jackson.map.ser.impl,org.codehaus.jackson.map.type,org.codehaus.jackson.type,org.codehaus.jackson.io,org.codehaus.jackson.node,org.codehaus.jackson.map,org.codehaus.jackson.util,org.codehaus.jackson.map.introspect,org.codehaus.jackson.map.util,org.codehaus.jackson,org.codehaus.jackson.map.ser'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.codehaus.jackson.map.ser.impl'/>
+      <attribute name='version' type='Version' value='1.9.13'/>
+      <attribute name='bundle-symbolic-name' value='jackson-mapper-asl'/>
+      <attribute name='bundle-version' type='Version' value='1.9.13'/>
+      <directive name='uses' value='org.codehaus.jackson.io,org.codehaus.jackson.map,org.codehaus.jackson.map.ser.std,org.codehaus.jackson,org.codehaus.jackson.map.ser,org.codehaus.jackson.type'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.codehaus.jackson.map.type'/>
+      <attribute name='version' type='Version' value='1.9.13'/>
+      <attribute name='bundle-symbolic-name' value='jackson-mapper-asl'/>
+      <attribute name='bundle-version' type='Version' value='1.9.13'/>
+      <directive name='uses' value='org.codehaus.jackson.map,org.codehaus.jackson.map.util,org.codehaus.jackson,org.codehaus.jackson.type'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.codehaus.jackson.map.module'/>
+      <attribute name='version' type='Version' value='1.9.13'/>
+      <attribute name='bundle-symbolic-name' value='jackson-mapper-asl'/>
+      <attribute name='bundle-version' type='Version' value='1.9.13'/>
+      <directive name='uses' value='org.codehaus.jackson.map.deser,org.codehaus.jackson.map,org.codehaus.jackson.map.type,org.codehaus.jackson,org.codehaus.jackson.type'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.codehaus.jackson.node'/>
+      <attribute name='version' type='Version' value='1.9.13'/>
+      <attribute name='bundle-symbolic-name' value='jackson-mapper-asl'/>
+      <attribute name='bundle-version' type='Version' value='1.9.13'/>
+      <directive name='uses' value='org.codehaus.jackson.io,org.codehaus.jackson.map,org.codehaus.jackson.util,org.codehaus.jackson.impl,org.codehaus.jackson'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.codehaus.jackson.map.ext'/>
+      <attribute name='version' type='Version' value='1.9.13'/>
+      <attribute name='bundle-symbolic-name' value='jackson-mapper-asl'/>
+      <attribute name='bundle-version' type='Version' value='1.9.13'/>
+      <directive name='uses' value='org.codehaus.jackson.map.ser.std,javax.xml.parsers,org.codehaus.jackson.type,org.w3c.dom,org.xml.sax,javax.xml.datatype,javax.xml.namespace,org.codehaus.jackson.node,org.codehaus.jackson.map,org.codehaus.jackson,org.codehaus.jackson.map.deser.std,org.codehaus.jackson.map.util'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.codehaus.jackson.map'/>
+      <attribute name='version' type='Version' value='1.9.13'/>
+      <attribute name='bundle-symbolic-name' value='jackson-mapper-asl'/>
+      <attribute name='bundle-version' type='Version' value='1.9.13'/>
+      <directive name='uses' value='org.codehaus.jackson.format,org.codehaus.jackson.schema,org.codehaus.jackson.map.annotate,org.codehaus.jackson.annotate,org.codehaus.jackson.map.type,org.codehaus.jackson.type,org.codehaus.jackson.io,org.codehaus.jackson.node,org.codehaus.jackson.map.deser,org.codehaus.jackson.util,org.codehaus.jackson.map.introspect,org.codehaus.jackson.map.jsontype,org.codehaus.jackson,org.codehaus.jackson.map.util,org.codehaus.jackson.map.ser,org.codehaus.jackson.map.jsontype.impl'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.codehaus.jackson.map.deser'/>
+      <attribute name='version' type='Version' value='1.9.13'/>
+      <attribute name='bundle-symbolic-name' value='jackson-mapper-asl'/>
+      <attribute name='bundle-version' type='Version' value='1.9.13'/>
+      <directive name='uses' value='org.codehaus.jackson.map.exc,org.codehaus.jackson.map.deser.impl,org.codehaus.jackson.map.annotate,org.codehaus.jackson.annotate,org.codehaus.jackson.map.type,org.codehaus.jackson.type,org.codehaus.jackson.io,org.codehaus.jackson.node,org.codehaus.jackson.map.ext,org.codehaus.jackson.map,org.codehaus.jackson.util,org.codehaus.jackson.map.introspect,org.codehaus.jackson.map.jsontype,org.codehaus.jackson.map.util,org.codehaus.jackson,org.codehaus.jackson.map.deser.std'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.codehaus.jackson.map.introspect'/>
+      <attribute name='version' type='Version' value='1.9.13'/>
+      <attribute name='bundle-symbolic-name' value='jackson-mapper-asl'/>
+      <attribute name='bundle-version' type='Version' value='1.9.13'/>
+      <directive name='uses' value='org.codehaus.jackson.map.annotate,org.codehaus.jackson.map.ser.std,org.codehaus.jackson.annotate,org.codehaus.jackson.map.type,org.codehaus.jackson.type,org.codehaus.jackson.map,org.codehaus.jackson.map.jsontype,org.codehaus.jackson.map.util,org.codehaus.jackson.map.jsontype.impl'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.codehaus.jackson.map.jsontype'/>
+      <attribute name='version' type='Version' value='1.9.13'/>
+      <attribute name='bundle-symbolic-name' value='jackson-mapper-asl'/>
+      <attribute name='bundle-version' type='Version' value='1.9.13'/>
+      <directive name='uses' value='org.codehaus.jackson.map,org.codehaus.jackson.annotate,org.codehaus.jackson.map.introspect,org.codehaus.jackson.type'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.codehaus.jackson.map.util'/>
+      <attribute name='version' type='Version' value='1.9.13'/>
+      <attribute name='bundle-symbolic-name' value='jackson-mapper-asl'/>
+      <attribute name='bundle-version' type='Version' value='1.9.13'/>
+      <directive name='uses' value='org.codehaus.jackson.io,org.codehaus.jackson.map,org.codehaus.jackson.map.type,org.codehaus.jackson.map.introspect,org.codehaus.jackson,org.codehaus.jackson.type'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.codehaus.jackson.map.deser.std'/>
+      <attribute name='version' type='Version' value='1.9.13'/>
+      <attribute name='bundle-symbolic-name' value='jackson-mapper-asl'/>
+      <attribute name='bundle-version' type='Version' value='1.9.13'/>
+      <directive name='uses' value='org.codehaus.jackson.map.deser.impl,org.codehaus.jackson.map.annotate,org.codehaus.jackson.map.type,org.codehaus.jackson.type,org.codehaus.jackson.io,org.codehaus.jackson.node,org.codehaus.jackson.map,org.codehaus.jackson.map.deser,org.codehaus.jackson.util,org.codehaus.jackson.map.introspect,org.codehaus.jackson,org.codehaus.jackson.map.util'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.codehaus.jackson.map.jsontype.impl'/>
+      <attribute name='version' type='Version' value='1.9.13'/>
+      <attribute name='bundle-symbolic-name' value='jackson-mapper-asl'/>
+      <attribute name='bundle-version' type='Version' value='1.9.13'/>
+      <directive name='uses' value='org.codehaus.jackson.annotate,org.codehaus.jackson.map.type,org.codehaus.jackson.type,org.codehaus.jackson.map,org.codehaus.jackson.util,org.codehaus.jackson.map.introspect,org.codehaus.jackson.map.jsontype,org.codehaus.jackson,org.codehaus.jackson.map.util'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.codehaus.jackson.map.ser'/>
+      <attribute name='version' type='Version' value='1.9.13'/>
+      <attribute name='bundle-symbolic-name' value='jackson-mapper-asl'/>
+      <attribute name='bundle-version' type='Version' value='1.9.13'/>
+      <directive name='uses' value='org.codehaus.jackson.map.annotate,org.codehaus.jackson.node,org.codehaus.jackson.map.ext,org.codehaus.jackson.map,org.codehaus.jackson.map.introspect,org.codehaus.jackson.map.jsontype,org.codehaus.jackson.map.util,org.codehaus.jackson.schema,org.codehaus.jackson.map.ser.std,org.codehaus.jackson.map.ser.impl,org.codehaus.jackson.map.type,org.codehaus.jackson.type,org.codehaus.jackson.io,org.codehaus.jackson.util,org.codehaus.jackson'/>
+    </capability>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.xml.datatype)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.xml.namespace)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.xml.parsers)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.codehaus.jackson)(version&gt;=1.9.13))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.codehaus.jackson.annotate)(version&gt;=1.9.13))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.codehaus.jackson.format)(version&gt;=1.9.13))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.codehaus.jackson.impl)(version&gt;=1.9.13))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.codehaus.jackson.io)(version&gt;=1.9.13))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.codehaus.jackson.type)(version&gt;=1.9.13))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.codehaus.jackson.util)(version&gt;=1.9.13))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.w3c.dom)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.xml.sax)'/>
+    </requirement>
+    <requirement namespace='osgi.ee'>
+      <directive name='filter' value='(|(osgi.ee=J2SE-1.5)(osgi.ee=JavaSE-1.6))'/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace='osgi.identity'>
+      <attribute name='osgi.identity' value='org.eclipse.jetty.http'/>
+      <attribute name='type' value='osgi.bundle'/>
+      <attribute name='version' type='Version' value='9.0.6.v20130930'/>
+    </capability>
+    <capability namespace='osgi.content'>
+      <attribute name='osgi.content' value='771079f2e332b5dc4911d7134491bfb119e652983fe1a8579ac3ffde45b981f0'/>
+      <attribute name='url' value='org.eclipse.jetty.http/org.eclipse.jetty.http-9.0.6.jar'/>
+      <attribute name='size' type='Long' value='105131'/>
+      <attribute name='mime' value='application/vnd.osgi.bundle'/>
+    </capability>
+    <capability namespace='osgi.wiring.bundle'>
+      <attribute name='osgi.wiring.bundle' value='org.eclipse.jetty.http'/>
+      <attribute name='bundle-version' type='Version' value='9.0.6.v20130930'/>
+    </capability>
+    <capability namespace='osgi.wiring.host'>
+      <attribute name='osgi.wiring.host' value='org.eclipse.jetty.http'/>
+      <attribute name='bundle-version' type='Version' value='9.0.6.v20130930'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.eclipse.jetty.http'/>
+      <attribute name='version' type='Version' value='9.0.6'/>
+      <attribute name='bundle-symbolic-name' value='org.eclipse.jetty.http'/>
+      <attribute name='bundle-version' type='Version' value='9.0.6.v20130930'/>
+      <directive name='uses' value='org.eclipse.jetty.util.resource,org.eclipse.jetty.util,org.eclipse.jetty.util.log'/>
+    </capability>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.eclipse.jetty.util)(version&gt;=9.0.0)(!(version&gt;=10.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.eclipse.jetty.util.log)(version&gt;=9.0.0)(!(version&gt;=10.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.eclipse.jetty.util.resource)(version&gt;=9.0.0)(!(version&gt;=10.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.ee'>
+      <directive name='filter' value='(osgi.ee=JavaSE-1.7)'/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace='osgi.identity'>
+      <attribute name='osgi.identity' value='org.eclipse.osgi.services'/>
+      <attribute name='type' value='osgi.bundle'/>
+      <attribute name='version' type='Version' value='3.3.100.v20130513-1956'/>
+    </capability>
+    <capability namespace='osgi.content'>
+      <attribute name='osgi.content' value='e90b7a843e9a4d6c33b5e3a76ff3482b8887298308da7e9008bc4c51cd0a8b83'/>
+      <attribute name='url' value='org.eclipse.osgi.services/org.eclipse.osgi.services-3.3.100.jar'/>
+      <attribute name='size' type='Long' value='82610'/>
+      <attribute name='mime' value='application/vnd.osgi.bundle'/>
+    </capability>
+    <capability namespace='osgi.wiring.bundle'>
+      <attribute name='osgi.wiring.bundle' value='org.eclipse.osgi.services'/>
+      <attribute name='bundle-version' type='Version' value='3.3.100.v20130513-1956'/>
+    </capability>
+    <capability namespace='osgi.wiring.host'>
+      <attribute name='osgi.wiring.host' value='org.eclipse.osgi.services'/>
+      <attribute name='bundle-version' type='Version' value='3.3.100.v20130513-1956'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.osgi.service.cm'/>
+      <attribute name='version' type='Version' value='1.4.0'/>
+      <attribute name='bundle-symbolic-name' value='org.eclipse.osgi.services'/>
+      <attribute name='bundle-version' type='Version' value='3.3.100.v20130513-1956'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.osgi.service.component'/>
+      <attribute name='version' type='Version' value='1.2.0'/>
+      <attribute name='bundle-symbolic-name' value='org.eclipse.osgi.services'/>
+      <attribute name='bundle-version' type='Version' value='3.3.100.v20130513-1956'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.osgi.service.component.annotations'/>
+      <attribute name='version' type='Version' value='1.2.0'/>
+      <attribute name='bundle-symbolic-name' value='org.eclipse.osgi.services'/>
+      <attribute name='bundle-version' type='Version' value='3.3.100.v20130513-1956'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.osgi.service.device'/>
+      <attribute name='version' type='Version' value='1.1.0'/>
+      <attribute name='bundle-symbolic-name' value='org.eclipse.osgi.services'/>
+      <attribute name='bundle-version' type='Version' value='3.3.100.v20130513-1956'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.osgi.service.event'/>
+      <attribute name='version' type='Version' value='1.3.0'/>
+      <attribute name='bundle-symbolic-name' value='org.eclipse.osgi.services'/>
+      <attribute name='bundle-version' type='Version' value='3.3.100.v20130513-1956'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.osgi.service.http'/>
+      <attribute name='version' type='Version' value='1.2.1'/>
+      <attribute name='bundle-symbolic-name' value='org.eclipse.osgi.services'/>
+      <attribute name='bundle-version' type='Version' value='3.3.100.v20130513-1956'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.osgi.service.io'/>
+      <attribute name='version' type='Version' value='1.0.0'/>
+      <attribute name='bundle-symbolic-name' value='org.eclipse.osgi.services'/>
+      <attribute name='bundle-version' type='Version' value='3.3.100.v20130513-1956'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.osgi.service.log'/>
+      <attribute name='version' type='Version' value='1.3.0'/>
+      <attribute name='bundle-symbolic-name' value='org.eclipse.osgi.services'/>
+      <attribute name='bundle-version' type='Version' value='3.3.100.v20130513-1956'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.osgi.service.metatype'/>
+      <attribute name='version' type='Version' value='1.2.0'/>
+      <attribute name='bundle-symbolic-name' value='org.eclipse.osgi.services'/>
+      <attribute name='bundle-version' type='Version' value='3.3.100.v20130513-1956'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.osgi.service.provisioning'/>
+      <attribute name='version' type='Version' value='1.2.0'/>
+      <attribute name='bundle-symbolic-name' value='org.eclipse.osgi.services'/>
+      <attribute name='bundle-version' type='Version' value='3.3.100.v20130513-1956'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.osgi.service.upnp'/>
+      <attribute name='version' type='Version' value='1.2.0'/>
+      <attribute name='bundle-symbolic-name' value='org.eclipse.osgi.services'/>
+      <attribute name='bundle-version' type='Version' value='3.3.100.v20130513-1956'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.osgi.service.useradmin'/>
+      <attribute name='version' type='Version' value='1.1.0'/>
+      <attribute name='bundle-symbolic-name' value='org.eclipse.osgi.services'/>
+      <attribute name='bundle-version' type='Version' value='3.3.100.v20130513-1956'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.osgi.service.wireadmin'/>
+      <attribute name='version' type='Version' value='1.0.1'/>
+      <attribute name='bundle-symbolic-name' value='org.eclipse.osgi.services'/>
+      <attribute name='bundle-version' type='Version' value='3.3.100.v20130513-1956'/>
+    </capability>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.osgi.framework)(version&gt;=1.6.0))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.osgi.service.cm)(version&gt;=1.4.0)(!(version&gt;=1.5.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.osgi.service.component)(version&gt;=1.2.0)(!(version&gt;=1.3.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.osgi.service.device)(version&gt;=1.1.0)(!(version&gt;=1.2.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.osgi.service.event)(version&gt;=1.3.0)(!(version&gt;=1.4.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.osgi.service.http)(version&gt;=1.2.1)(!(version&gt;=1.3.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.osgi.service.io)(version&gt;=1.0.0)(!(version&gt;=1.1.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.osgi.service.log)(version&gt;=1.3.0)(!(version&gt;=1.4.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.osgi.service.metatype)(version&gt;=1.2.0)(!(version&gt;=1.3.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.osgi.service.provisioning)(version&gt;=1.2.0)(!(version&gt;=1.3.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.osgi.service.upnp)(version&gt;=1.2.0)(!(version&gt;=1.3.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.osgi.service.useradmin)(version&gt;=1.1.0)(!(version&gt;=1.2.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.osgi.service.wireadmin)(version&gt;=1.0.1)(!(version&gt;=1.1.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.servlet)'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.servlet.http)'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.ee'>
+      <directive name='filter' value='(|(osgi.ee=OSGi/Minimum-1.2)(osgi.ee=CDC-1.1/Foundation-1.1)(osgi.ee=J2SE-1.4))'/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace='osgi.identity'>
+      <attribute name='osgi.identity' value='com.orientechnologies.orientdb-server'/>
+      <attribute name='type' value='osgi.bundle'/>
+      <attribute name='version' type='Version' value='1.5.1'/>
+    </capability>
+    <capability namespace='osgi.content'>
+      <attribute name='osgi.content' value='2959160641d1efdeca65285099a14fc0e262c80e17d5eadac25d365d35f1b0ba'/>
+      <attribute name='url' value='com.orientechnologies.orientdb-server/com.orientechnologies.orientdb-server-1.5.1.jar'/>
+      <attribute name='size' type='Long' value='373423'/>
+      <attribute name='mime' value='application/vnd.osgi.bundle'/>
+    </capability>
+    <capability namespace='osgi.wiring.bundle'>
+      <attribute name='osgi.wiring.bundle' value='com.orientechnologies.orientdb-server'/>
+      <attribute name='bundle-version' type='Version' value='1.5.1'/>
+    </capability>
+    <capability namespace='osgi.wiring.host'>
+      <attribute name='osgi.wiring.host' value='com.orientechnologies.orientdb-server'/>
+      <attribute name='bundle-version' type='Version' value='1.5.1'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='com.orientechnologies.orient.server.network.protocol.http'/>
+      <attribute name='version' type='Version' value='1.5.1'/>
+      <attribute name='bundle-symbolic-name' value='com.orientechnologies.orientdb-server'/>
+      <attribute name='bundle-version' type='Version' value='1.5.1'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='com.orientechnologies.orient.server.distributed'/>
+      <attribute name='version' type='Version' value='1.5.1'/>
+      <attribute name='bundle-symbolic-name' value='com.orientechnologies.orientdb-server'/>
+      <attribute name='bundle-version' type='Version' value='1.5.1'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='com.orientechnologies.orient.server.network.protocol.http.command.all'/>
+      <attribute name='version' type='Version' value='1.5.1'/>
+      <attribute name='bundle-symbolic-name' value='com.orientechnologies.orientdb-server'/>
+      <attribute name='bundle-version' type='Version' value='1.5.1'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='com.orientechnologies.orient.server'/>
+      <attribute name='version' type='Version' value='1.5.1'/>
+      <attribute name='bundle-symbolic-name' value='com.orientechnologies.orientdb-server'/>
+      <attribute name='bundle-version' type='Version' value='1.5.1'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='com.orientechnologies.orient.server.managed'/>
+      <attribute name='version' type='Version' value='1.5.1'/>
+      <attribute name='bundle-symbolic-name' value='com.orientechnologies.orientdb-server'/>
+      <attribute name='bundle-version' type='Version' value='1.5.1'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='com.orientechnologies.orient.server.network.protocol.http.command'/>
+      <attribute name='version' type='Version' value='1.5.1'/>
+      <attribute name='bundle-symbolic-name' value='com.orientechnologies.orientdb-server'/>
+      <attribute name='bundle-version' type='Version' value='1.5.1'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='com.orientechnologies.orient.server.config'/>
+      <attribute name='version' type='Version' value='1.5.1'/>
+      <attribute name='bundle-symbolic-name' value='com.orientechnologies.orientdb-server'/>
+      <attribute name='bundle-version' type='Version' value='1.5.1'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='com.orientechnologies.orient.server.handler'/>
+      <attribute name='version' type='Version' value='1.5.1'/>
+      <attribute name='bundle-symbolic-name' value='com.orientechnologies.orientdb-server'/>
+      <attribute name='bundle-version' type='Version' value='1.5.1'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='com.orientechnologies.orient.server.distributed.conflict'/>
+      <attribute name='version' type='Version' value='1.5.1'/>
+      <attribute name='bundle-symbolic-name' value='com.orientechnologies.orientdb-server'/>
+      <attribute name='bundle-version' type='Version' value='1.5.1'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='com.orientechnologies.orient.server.network.protocol.http.multipart'/>
+      <attribute name='version' type='Version' value='1.5.1'/>
+      <attribute name='bundle-symbolic-name' value='com.orientechnologies.orientdb-server'/>
+      <attribute name='bundle-version' type='Version' value='1.5.1'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='com.orientechnologies.orient.server.network.protocol.binary'/>
+      <attribute name='version' type='Version' value='1.5.1'/>
+      <attribute name='bundle-symbolic-name' value='com.orientechnologies.orientdb-server'/>
+      <attribute name='bundle-version' type='Version' value='1.5.1'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='com.orientechnologies.orient.server.network'/>
+      <attribute name='version' type='Version' value='1.5.1'/>
+      <attribute name='bundle-symbolic-name' value='com.orientechnologies.orientdb-server'/>
+      <attribute name='bundle-version' type='Version' value='1.5.1'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='com.orientechnologies.orient.server.network.protocol.http.command.put'/>
+      <attribute name='version' type='Version' value='1.5.1'/>
+      <attribute name='bundle-symbolic-name' value='com.orientechnologies.orientdb-server'/>
+      <attribute name='bundle-version' type='Version' value='1.5.1'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='com.orientechnologies.orient.server.tx'/>
+      <attribute name='version' type='Version' value='1.5.1'/>
+      <attribute name='bundle-symbolic-name' value='com.orientechnologies.orientdb-server'/>
+      <attribute name='bundle-version' type='Version' value='1.5.1'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='com.orientechnologies.orient.server.plugin.mail'/>
+      <attribute name='version' type='Version' value='1.5.1'/>
+      <attribute name='bundle-symbolic-name' value='com.orientechnologies.orientdb-server'/>
+      <attribute name='bundle-version' type='Version' value='1.5.1'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='com.orientechnologies.orient.server.network.protocol.http.command.delete'/>
+      <attribute name='version' type='Version' value='1.5.1'/>
+      <attribute name='bundle-symbolic-name' value='com.orientechnologies.orientdb-server'/>
+      <attribute name='bundle-version' type='Version' value='1.5.1'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='com.orientechnologies.orient.server.journal'/>
+      <attribute name='version' type='Version' value='1.5.1'/>
+      <attribute name='bundle-symbolic-name' value='com.orientechnologies.orientdb-server'/>
+      <attribute name='bundle-version' type='Version' value='1.5.1'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='com.orientechnologies.orient.server.network.protocol.http.command.options'/>
+      <attribute name='version' type='Version' value='1.5.1'/>
+      <attribute name='bundle-symbolic-name' value='com.orientechnologies.orientdb-server'/>
+      <attribute name='bundle-version' type='Version' value='1.5.1'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='com.orientechnologies.orient.server.network.protocol'/>
+      <attribute name='version' type='Version' value='1.5.1'/>
+      <attribute name='bundle-symbolic-name' value='com.orientechnologies.orientdb-server'/>
+      <attribute name='bundle-version' type='Version' value='1.5.1'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='com.orientechnologies.orient.server.distributed.task'/>
+      <attribute name='version' type='Version' value='1.5.1'/>
+      <attribute name='bundle-symbolic-name' value='com.orientechnologies.orientdb-server'/>
+      <attribute name='bundle-version' type='Version' value='1.5.1'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='com.orientechnologies.orient.server.network.protocol.http.command.get'/>
+      <attribute name='version' type='Version' value='1.5.1'/>
+      <attribute name='bundle-symbolic-name' value='com.orientechnologies.orientdb-server'/>
+      <attribute name='bundle-version' type='Version' value='1.5.1'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='com.orientechnologies.orient.server.network.protocol.http.command.post'/>
+      <attribute name='version' type='Version' value='1.5.1'/>
+      <attribute name='bundle-symbolic-name' value='com.orientechnologies.orientdb-server'/>
+      <attribute name='bundle-version' type='Version' value='1.5.1'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='com.orientechnologies.orient.server.schedule'/>
+      <attribute name='version' type='Version' value='1.5.1'/>
+      <attribute name='bundle-symbolic-name' value='com.orientechnologies.orientdb-server'/>
+      <attribute name='bundle-version' type='Version' value='1.5.1'/>
+    </capability>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.common.collection)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.common.concur)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.common.concur.lock)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.common.concur.resource)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.common.exception)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.common.io)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.common.listener)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.common.log)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.common.parser)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.common.profiler)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.common.thread)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.common.util)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.client.db)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.core)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.core.cache)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.core.command)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.core.command.script)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.core.config)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.core.db)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.core.db.document)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.core.db.raw)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.core.db.record)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.core.db.tool)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.core.dictionary)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.core.exception)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.core.fetch)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.core.fetch.remote)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.core.hook)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.core.id)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.core.index)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.core.iterator)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.core.metadata)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.core.metadata.function)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.core.metadata.schema)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.core.metadata.security)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.core.processor)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.core.profiler)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.core.query)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.core.record)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.core.record.impl)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.core.schedule)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.core.security)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.core.serialization)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.core.serialization.serializer)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.core.serialization.serializer.record)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.core.serialization.serializer.record.string)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.core.serialization.serializer.stream)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.core.sql)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.core.sql.query)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.core.storage)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.core.storage.fs)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.core.storage.impl.local)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.core.storage.impl.memory)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.core.tx)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.core.version)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.enterprise.channel)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.enterprise.channel.binary)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.enterprise.channel.text)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.activation)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.mail)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.mail.internet)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.management)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.script)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.xml.bind)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.xml.bind.annotation)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.xml.validation)'/>
+    </requirement>
+    <requirement namespace='osgi.ee'>
+      <directive name='filter' value='(osgi.ee=JavaSE-1.6)'/>
+    </requirement>
+  </resource>
   <resource>
     <capability namespace='osgi.identity'>
       <attribute name='osgi.identity' value='com.orientechnologies.orient-commons'/>
@@ -168,6 +1518,270 @@
     </requirement>
     <requirement namespace='osgi.ee'>
       <directive name='filter' value='(osgi.ee=JavaSE-1.6)'/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace='osgi.identity'>
+      <attribute name='osgi.identity' value='org.eclipse.jetty.servlet'/>
+      <attribute name='type' value='osgi.bundle'/>
+      <attribute name='version' type='Version' value='9.0.6.v20130930'/>
+    </capability>
+    <capability namespace='osgi.content'>
+      <attribute name='osgi.content' value='0761dd09946596c05a42a37be7869898f06fdbbf71d52532f4eb2bd514e10acf'/>
+      <attribute name='url' value='org.eclipse.jetty.servlet/org.eclipse.jetty.servlet-9.0.6.jar'/>
+      <attribute name='size' type='Long' value='106373'/>
+      <attribute name='mime' value='application/vnd.osgi.bundle'/>
+    </capability>
+    <capability namespace='osgi.wiring.bundle'>
+      <attribute name='osgi.wiring.bundle' value='org.eclipse.jetty.servlet'/>
+      <attribute name='bundle-version' type='Version' value='9.0.6.v20130930'/>
+    </capability>
+    <capability namespace='osgi.wiring.host'>
+      <attribute name='osgi.wiring.host' value='org.eclipse.jetty.servlet'/>
+      <attribute name='bundle-version' type='Version' value='9.0.6.v20130930'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.eclipse.jetty.servlet'/>
+      <attribute name='version' type='Version' value='9.0.6'/>
+      <attribute name='bundle-symbolic-name' value='org.eclipse.jetty.servlet'/>
+      <attribute name='bundle-version' type='Version' value='9.0.6.v20130930'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.eclipse.jetty.servlet.jmx'/>
+      <attribute name='version' type='Version' value='9.0.6'/>
+      <attribute name='bundle-symbolic-name' value='org.eclipse.jetty.servlet'/>
+      <attribute name='bundle-version' type='Version' value='9.0.6.v20130930'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.eclipse.jetty.servlet.listener'/>
+      <attribute name='version' type='Version' value='9.0.6'/>
+      <attribute name='bundle-symbolic-name' value='org.eclipse.jetty.servlet'/>
+      <attribute name='bundle-version' type='Version' value='9.0.6.v20130930'/>
+    </capability>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=javax.servlet)(version&gt;=2.6.0))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=javax.servlet.descriptor)(version&gt;=2.6.0))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=javax.servlet.http)(version&gt;=2.6.0))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.eclipse.jetty.http)(version&gt;=9.0.0)(!(version&gt;=10.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.eclipse.jetty.io)(version&gt;=9.0.0)(!(version&gt;=10.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.eclipse.jetty.jmx)(version&gt;=9.0.0))'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.eclipse.jetty.security)(version&gt;=9.0.0)(!(version&gt;=10.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.eclipse.jetty.server)(version&gt;=9.0.0)(!(version&gt;=10.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.eclipse.jetty.server.handler)(version&gt;=9.0.0)(!(version&gt;=10.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.eclipse.jetty.server.session)(version&gt;=9.0.0)(!(version&gt;=10.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.eclipse.jetty.util)(version&gt;=9.0.0)(!(version&gt;=10.0.0)))'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.eclipse.jetty.util.annotation)(version&gt;=9.0.0)(!(version&gt;=10.0.0)))'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.eclipse.jetty.util.component)(version&gt;=9.0.0)(!(version&gt;=10.0.0)))'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.eclipse.jetty.util.log)(version&gt;=9.0.0)(!(version&gt;=10.0.0)))'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.eclipse.jetty.util.resource)(version&gt;=9.0.0)(!(version&gt;=10.0.0)))'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.ee'>
+      <directive name='filter' value='(osgi.ee=JavaSE-1.7)'/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace='osgi.identity'>
+      <attribute name='osgi.identity' value='org.eclipse.jetty.osgi.boot'/>
+      <attribute name='type' value='osgi.bundle'/>
+      <attribute name='version' type='Version' value='9.0.6.v20130930'/>
+      <directive name='singleton' value='true'/>
+    </capability>
+    <capability namespace='osgi.content'>
+      <attribute name='osgi.content' value='989c1912167bb71d3a2f065c534e09b8751938ae6092eab114c06246ee445d17'/>
+      <attribute name='url' value='org.eclipse.jetty.osgi.boot/org.eclipse.jetty.osgi.boot-9.0.6.jar'/>
+      <attribute name='size' type='Long' value='108733'/>
+      <attribute name='mime' value='application/vnd.osgi.bundle'/>
+    </capability>
+    <capability namespace='osgi.wiring.bundle'>
+      <attribute name='osgi.wiring.bundle' value='org.eclipse.jetty.osgi.boot'/>
+      <attribute name='bundle-version' type='Version' value='9.0.6.v20130930'/>
+    </capability>
+    <capability namespace='osgi.wiring.host'>
+      <attribute name='osgi.wiring.host' value='org.eclipse.jetty.osgi.boot'/>
+      <attribute name='bundle-version' type='Version' value='9.0.6.v20130930'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.eclipse.jetty.osgi.boot.internal.serverfactory'/>
+      <attribute name='version' type='Version' value='9.0.6'/>
+      <attribute name='bundle-symbolic-name' value='org.eclipse.jetty.osgi.boot'/>
+      <attribute name='bundle-version' type='Version' value='9.0.6.v20130930'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.eclipse.jetty.osgi.boot.utils'/>
+      <attribute name='version' type='Version' value='9.0.6'/>
+      <attribute name='bundle-symbolic-name' value='org.eclipse.jetty.osgi.boot'/>
+      <attribute name='bundle-version' type='Version' value='9.0.6.v20130930'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.eclipse.jetty.osgi.boot.utils.internal'/>
+      <attribute name='version' type='Version' value='9.0.6'/>
+      <attribute name='bundle-symbolic-name' value='org.eclipse.jetty.osgi.boot'/>
+      <attribute name='bundle-version' type='Version' value='9.0.6.v20130930'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.eclipse.jetty.osgi.boot'/>
+      <attribute name='version' type='Version' value='9.0.6'/>
+      <attribute name='bundle-symbolic-name' value='org.eclipse.jetty.osgi.boot'/>
+      <attribute name='bundle-version' type='Version' value='9.0.6.v20130930'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.eclipse.jetty.osgi.boot.internal.webapp'/>
+      <attribute name='version' type='Version' value='9.0.6'/>
+      <attribute name='bundle-symbolic-name' value='org.eclipse.jetty.osgi.boot'/>
+      <attribute name='bundle-version' type='Version' value='9.0.6.v20130930'/>
+    </capability>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=javax.mail)(version&gt;=1.4.0))'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=javax.mail.event)(version&gt;=1.4.0))'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=javax.mail.internet)(version&gt;=1.4.0))'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=javax.mail.search)(version&gt;=1.4.0))'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=javax.mail.util)(version&gt;=1.4.0))'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=javax.servlet)(version&gt;=2.6.0))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=javax.servlet.http)(version&gt;=2.6.0))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=javax.transaction)(version&gt;=1.1.0))'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=javax.transaction.xa)(version&gt;=1.1.0))'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.eclipse.jetty.annotations)(version&gt;=9.0.0))'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.eclipse.jetty.deploy)(version&gt;=9.0.0)(!(version&gt;=10.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.eclipse.jetty.deploy.bindings)(version&gt;=9.0.0)(!(version&gt;=10.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.eclipse.jetty.deploy.graph)(version&gt;=9.0.0)(!(version&gt;=10.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.eclipse.jetty.osgi.boot.utils)(version&gt;=9.0.0)(!(version&gt;=10.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.eclipse.jetty.osgi.boot.utils.internal)(version&gt;=9.0.0)(!(version&gt;=10.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.eclipse.jetty.server)(version&gt;=9.0.0)(!(version&gt;=10.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.eclipse.jetty.server.handler)(version&gt;=9.0.0)(!(version&gt;=10.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.eclipse.jetty.util)(version&gt;=9.0.0)(!(version&gt;=10.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.eclipse.jetty.util.component)(version&gt;=9.0.0)(!(version&gt;=10.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.eclipse.jetty.util.log)(version&gt;=9.0.0)(!(version&gt;=10.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.eclipse.jetty.util.resource)(version&gt;=9.0.0)(!(version&gt;=10.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.eclipse.jetty.webapp)(version&gt;=9.0.0)(!(version&gt;=10.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.eclipse.jetty.xml)(version&gt;=9.0.0)(!(version&gt;=10.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.osgi.framework)(version&gt;=1.5.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.osgi.service.cm)(version&gt;=1.2.0))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.osgi.service.event)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.osgi.service.packageadmin)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.osgi.service.startlevel)(version&gt;=1.0.0))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.osgi.service.url)(version&gt;=1.0.0))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.osgi.util.tracker)(version&gt;=1.3.0))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.slf4j)'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.slf4j.helpers)'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.slf4j.spi)'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.xml.sax)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.xml.sax.helpers)'/>
+    </requirement>
+    <requirement namespace='osgi.ee'>
+      <directive name='filter' value='(osgi.ee=JavaSE-1.7)'/>
     </requirement>
   </resource>
   <resource>
@@ -788,6 +2402,82 @@
   </resource>
   <resource>
     <capability namespace='osgi.identity'>
+      <attribute name='osgi.identity' value='org.eclipse.jetty.webapp'/>
+      <attribute name='type' value='osgi.bundle'/>
+      <attribute name='version' type='Version' value='9.0.6.v20130930'/>
+    </capability>
+    <capability namespace='osgi.content'>
+      <attribute name='osgi.content' value='1f99a88a548e86905326ff9d7a3fdbc9d39543bc457ac7195ca888da173402de'/>
+      <attribute name='url' value='org.eclipse.jetty.webapp/org.eclipse.jetty.webapp-9.0.6.jar'/>
+      <attribute name='size' type='Long' value='112456'/>
+      <attribute name='mime' value='application/vnd.osgi.bundle'/>
+    </capability>
+    <capability namespace='osgi.wiring.bundle'>
+      <attribute name='osgi.wiring.bundle' value='org.eclipse.jetty.webapp'/>
+      <attribute name='bundle-version' type='Version' value='9.0.6.v20130930'/>
+    </capability>
+    <capability namespace='osgi.wiring.host'>
+      <attribute name='osgi.wiring.host' value='org.eclipse.jetty.webapp'/>
+      <attribute name='bundle-version' type='Version' value='9.0.6.v20130930'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.eclipse.jetty.webapp'/>
+      <attribute name='version' type='Version' value='9.0.6'/>
+      <attribute name='bundle-symbolic-name' value='org.eclipse.jetty.webapp'/>
+      <attribute name='bundle-version' type='Version' value='9.0.6.v20130930'/>
+      <directive name='uses' value='org.eclipse.jetty.util.annotation,org.eclipse.jetty.server,org.eclipse.jetty.util.resource,org.eclipse.jetty.xml,org.eclipse.jetty.util.log,org.eclipse.jetty.util,org.eclipse.jetty.server.handler,org.eclipse.jetty.util.security,org.eclipse.jetty.servlet,org.eclipse.jetty.security,org.eclipse.jetty.http,javax.servlet,javax.servlet.descriptor,org.eclipse.jetty.server.session,javax.servlet.http'/>
+    </capability>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=javax.servlet)(version&gt;=2.6.0))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=javax.servlet.descriptor)(version&gt;=2.6.0))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=javax.servlet.http)(version&gt;=2.6.0))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.eclipse.jetty.http)(version&gt;=9.0.0)(!(version&gt;=10.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.eclipse.jetty.security)(version&gt;=9.0.0)(!(version&gt;=10.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.eclipse.jetty.server)(version&gt;=9.0.0)(!(version&gt;=10.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.eclipse.jetty.server.handler)(version&gt;=9.0.0)(!(version&gt;=10.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.eclipse.jetty.server.session)(version&gt;=9.0.0)(!(version&gt;=10.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.eclipse.jetty.servlet)(version&gt;=9.0.0)(!(version&gt;=10.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.eclipse.jetty.util)(version&gt;=9.0.0)(!(version&gt;=10.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.eclipse.jetty.util.annotation)(version&gt;=9.0.0)(!(version&gt;=10.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.eclipse.jetty.util.log)(version&gt;=9.0.0)(!(version&gt;=10.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.eclipse.jetty.util.resource)(version&gt;=9.0.0)(!(version&gt;=10.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.eclipse.jetty.util.security)(version&gt;=9.0.0)(!(version&gt;=10.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.eclipse.jetty.xml)(version&gt;=9.0.0)(!(version&gt;=10.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.ee'>
+      <directive name='filter' value='(osgi.ee=JavaSE-1.7)'/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace='osgi.identity'>
       <attribute name='osgi.identity' value='com.orientechnologies.orientdb-client'/>
       <attribute name='type' value='osgi.fragment'/>
       <attribute name='version' type='Version' value='1.5.1'/>
@@ -915,641 +2605,487 @@
   </resource>
   <resource>
     <capability namespace='osgi.identity'>
-      <attribute name='osgi.identity' value='com.sun.mail.javax.mail'/>
+      <attribute name='osgi.identity' value='org.eclipse.jetty.deploy'/>
       <attribute name='type' value='osgi.bundle'/>
-      <attribute name='version' type='Version' value='1.4.5'/>
+      <attribute name='version' type='Version' value='9.0.6.v20130930'/>
     </capability>
     <capability namespace='osgi.content'>
-      <attribute name='osgi.content' value='086e48bf9cd433369b259b82cdaa4c025d37eda6a8cae3eef605fce018421007'/>
-      <attribute name='url' value='com.sun.mail.javax.mail/com.sun.mail.javax.mail-1.4.5.jar'/>
-      <attribute name='size' type='Long' value='507849'/>
+      <attribute name='osgi.content' value='101620b4638d59afdd41a26a83fc665f059fa82b808f8b1b5eff69a296673950'/>
+      <attribute name='url' value='org.eclipse.jetty.deploy/org.eclipse.jetty.deploy-9.0.6.jar'/>
+      <attribute name='size' type='Long' value='49564'/>
       <attribute name='mime' value='application/vnd.osgi.bundle'/>
     </capability>
     <capability namespace='osgi.wiring.bundle'>
-      <attribute name='osgi.wiring.bundle' value='com.sun.mail.javax.mail'/>
-      <attribute name='bundle-version' type='Version' value='1.4.5'/>
+      <attribute name='osgi.wiring.bundle' value='org.eclipse.jetty.deploy'/>
+      <attribute name='bundle-version' type='Version' value='9.0.6.v20130930'/>
     </capability>
     <capability namespace='osgi.wiring.host'>
-      <attribute name='osgi.wiring.host' value='com.sun.mail.javax.mail'/>
-      <attribute name='bundle-version' type='Version' value='1.4.5'/>
+      <attribute name='osgi.wiring.host' value='org.eclipse.jetty.deploy'/>
+      <attribute name='bundle-version' type='Version' value='9.0.6.v20130930'/>
     </capability>
     <capability namespace='osgi.wiring.package'>
-      <attribute name='osgi.wiring.package' value='javax.mail.internet'/>
-      <attribute name='version' type='Version' value='1.4.0'/>
-      <attribute name='bundle-symbolic-name' value='com.sun.mail.javax.mail'/>
-      <attribute name='bundle-version' type='Version' value='1.4.5'/>
-      <directive name='uses' value='com.sun.mail.util,javax.mail,javax.activation,javax.mail.util'/>
+      <attribute name='osgi.wiring.package' value='org.eclipse.jetty.deploy.bindings'/>
+      <attribute name='version' type='Version' value='9.0.6'/>
+      <attribute name='bundle-symbolic-name' value='org.eclipse.jetty.deploy'/>
+      <attribute name='bundle-version' type='Version' value='9.0.6.v20130930'/>
     </capability>
     <capability namespace='osgi.wiring.package'>
-      <attribute name='osgi.wiring.package' value='javax.mail.util'/>
-      <attribute name='version' type='Version' value='1.4.0'/>
-      <attribute name='bundle-symbolic-name' value='com.sun.mail.javax.mail'/>
-      <attribute name='bundle-version' type='Version' value='1.4.5'/>
-      <directive name='uses' value='javax.activation,javax.mail.internet'/>
+      <attribute name='osgi.wiring.package' value='org.eclipse.jetty.deploy.providers'/>
+      <attribute name='version' type='Version' value='9.0.6'/>
+      <attribute name='bundle-symbolic-name' value='org.eclipse.jetty.deploy'/>
+      <attribute name='bundle-version' type='Version' value='9.0.6.v20130930'/>
     </capability>
     <capability namespace='osgi.wiring.package'>
-      <attribute name='osgi.wiring.package' value='javax.mail.search'/>
-      <attribute name='version' type='Version' value='1.4.0'/>
-      <attribute name='bundle-symbolic-name' value='com.sun.mail.javax.mail'/>
-      <attribute name='bundle-version' type='Version' value='1.4.5'/>
-      <directive name='uses' value='javax.mail.internet,javax.mail'/>
+      <attribute name='osgi.wiring.package' value='org.eclipse.jetty.deploy.jmx'/>
+      <attribute name='version' type='Version' value='9.0.6'/>
+      <attribute name='bundle-symbolic-name' value='org.eclipse.jetty.deploy'/>
+      <attribute name='bundle-version' type='Version' value='9.0.6.v20130930'/>
     </capability>
     <capability namespace='osgi.wiring.package'>
-      <attribute name='osgi.wiring.package' value='javax.mail'/>
-      <attribute name='version' type='Version' value='1.4.0'/>
-      <attribute name='bundle-symbolic-name' value='com.sun.mail.javax.mail'/>
-      <attribute name='bundle-version' type='Version' value='1.4.5'/>
-      <directive name='uses' value='javax.mail.event,javax.mail.search,javax.activation,com.sun.mail.util'/>
+      <attribute name='osgi.wiring.package' value='org.eclipse.jetty.deploy.graph'/>
+      <attribute name='version' type='Version' value='9.0.6'/>
+      <attribute name='bundle-symbolic-name' value='org.eclipse.jetty.deploy'/>
+      <attribute name='bundle-version' type='Version' value='9.0.6.v20130930'/>
     </capability>
     <capability namespace='osgi.wiring.package'>
-      <attribute name='osgi.wiring.package' value='javax.mail.event'/>
-      <attribute name='version' type='Version' value='1.4.0'/>
-      <attribute name='bundle-symbolic-name' value='com.sun.mail.javax.mail'/>
-      <attribute name='bundle-version' type='Version' value='1.4.5'/>
-      <directive name='uses' value='javax.mail'/>
+      <attribute name='osgi.wiring.package' value='org.eclipse.jetty.deploy.util'/>
+      <attribute name='version' type='Version' value='9.0.6'/>
+      <attribute name='bundle-symbolic-name' value='org.eclipse.jetty.deploy'/>
+      <attribute name='bundle-version' type='Version' value='9.0.6.v20130930'/>
     </capability>
     <capability namespace='osgi.wiring.package'>
-      <attribute name='osgi.wiring.package' value='com.sun.mail.imap'/>
-      <attribute name='version' type='Version' value='1.4.5'/>
-      <attribute name='bundle-symbolic-name' value='com.sun.mail.javax.mail'/>
-      <attribute name='bundle-version' type='Version' value='1.4.5'/>
-      <directive name='uses' value='com.sun.mail.iap,com.sun.mail.imap.protocol,javax.mail,javax.activation,com.sun.mail.util,javax.mail.internet,javax.mail.search,javax.mail.event'/>
-    </capability>
-    <capability namespace='osgi.wiring.package'>
-      <attribute name='osgi.wiring.package' value='com.sun.mail.imap.protocol'/>
-      <attribute name='version' type='Version' value='1.4.5'/>
-      <attribute name='bundle-symbolic-name' value='com.sun.mail.javax.mail'/>
-      <attribute name='bundle-version' type='Version' value='1.4.5'/>
-      <directive name='uses' value='com.sun.mail.iap,com.sun.mail.util,javax.mail.internet,javax.mail,javax.mail.search,com.sun.mail.imap,javax.security.sasl,javax.security.auth.callback'/>
-    </capability>
-    <capability namespace='osgi.wiring.package'>
-      <attribute name='osgi.wiring.package' value='com.sun.mail.iap'/>
-      <attribute name='version' type='Version' value='1.4.5'/>
-      <attribute name='bundle-symbolic-name' value='com.sun.mail.javax.mail'/>
-      <attribute name='bundle-version' type='Version' value='1.4.5'/>
-      <directive name='uses' value='com.sun.mail.util'/>
-    </capability>
-    <capability namespace='osgi.wiring.package'>
-      <attribute name='osgi.wiring.package' value='com.sun.mail.pop3'/>
-      <attribute name='version' type='Version' value='1.4.5'/>
-      <attribute name='bundle-symbolic-name' value='com.sun.mail.javax.mail'/>
-      <attribute name='bundle-version' type='Version' value='1.4.5'/>
-      <directive name='uses' value='javax.mail,com.sun.mail.util,javax.mail.internet,javax.net.ssl,javax.mail.util'/>
-    </capability>
-    <capability namespace='osgi.wiring.package'>
-      <attribute name='osgi.wiring.package' value='com.sun.mail.smtp'/>
-      <attribute name='version' type='Version' value='1.4.5'/>
-      <attribute name='bundle-symbolic-name' value='com.sun.mail.javax.mail'/>
-      <attribute name='bundle-version' type='Version' value='1.4.5'/>
-      <directive name='uses' value='com.sun.mail.util,javax.mail.internet,javax.mail,javax.security.sasl,javax.security.auth.callback'/>
-    </capability>
-    <capability namespace='osgi.wiring.package'>
-      <attribute name='osgi.wiring.package' value='com.sun.mail.util'/>
-      <attribute name='version' type='Version' value='1.4.5'/>
-      <attribute name='bundle-symbolic-name' value='com.sun.mail.javax.mail'/>
-      <attribute name='bundle-version' type='Version' value='1.4.5'/>
-      <directive name='uses' value='javax.mail,javax.net.ssl,javax.mail.internet,javax.mail.util,sun.security.util,javax.net,javax.security.auth.x500'/>
-    </capability>
-    <capability namespace='osgi.wiring.package'>
-      <attribute name='osgi.wiring.package' value='com.sun.mail.util.logging'/>
-      <attribute name='version' type='Version' value='1.4.5'/>
-      <attribute name='bundle-symbolic-name' value='com.sun.mail.javax.mail'/>
-      <attribute name='bundle-version' type='Version' value='1.4.5'/>
-      <directive name='uses' value='javax.mail,javax.mail.internet,javax.mail.util,javax.activation,com.sun.mail.smtp'/>
-    </capability>
-    <capability namespace='osgi.wiring.package'>
-      <attribute name='osgi.wiring.package' value='com.sun.mail.handlers'/>
-      <attribute name='version' type='Version' value='1.4.5'/>
-      <attribute name='bundle-symbolic-name' value='com.sun.mail.javax.mail'/>
-      <attribute name='bundle-version' type='Version' value='1.4.5'/>
-      <directive name='uses' value='javax.activation,javax.mail.internet,javax.mail,javax.xml.transform,javax.xml.transform.stream'/>
+      <attribute name='osgi.wiring.package' value='org.eclipse.jetty.deploy'/>
+      <attribute name='version' type='Version' value='9.0.6'/>
+      <attribute name='bundle-symbolic-name' value='org.eclipse.jetty.deploy'/>
+      <attribute name='bundle-version' type='Version' value='9.0.6.v20130930'/>
     </capability>
     <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(&amp;(osgi.wiring.package=com.sun.mail.handlers)(version&gt;=1.4.0))'/>
-    </requirement>
-    <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(&amp;(osgi.wiring.package=com.sun.mail.iap)(version&gt;=1.4.0))'/>
-    </requirement>
-    <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(&amp;(osgi.wiring.package=com.sun.mail.imap)(version&gt;=1.4.0))'/>
-    </requirement>
-    <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(&amp;(osgi.wiring.package=com.sun.mail.imap.protocol)(version&gt;=1.4.0))'/>
-    </requirement>
-    <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(&amp;(osgi.wiring.package=com.sun.mail.pop3)(version&gt;=1.4.0))'/>
-    </requirement>
-    <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(&amp;(osgi.wiring.package=com.sun.mail.smtp)(version&gt;=1.4.0))'/>
-    </requirement>
-    <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(&amp;(osgi.wiring.package=com.sun.mail.util)(version&gt;=1.4.0))'/>
-    </requirement>
-    <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(&amp;(osgi.wiring.package=com.sun.mail.util.logging)(version&gt;=1.4.0))'/>
-    </requirement>
-    <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(osgi.wiring.package=javax.activation)'/>
-    </requirement>
-    <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(osgi.wiring.package=javax.crypto)'/>
-    </requirement>
-    <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(osgi.wiring.package=javax.crypto.spec)'/>
-    </requirement>
-    <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(&amp;(osgi.wiring.package=javax.mail)(version&gt;=1.4.0))'/>
-    </requirement>
-    <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(&amp;(osgi.wiring.package=javax.mail.event)(version&gt;=1.4.0))'/>
-    </requirement>
-    <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(&amp;(osgi.wiring.package=javax.mail.internet)(version&gt;=1.4.0))'/>
-    </requirement>
-    <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(&amp;(osgi.wiring.package=javax.mail.search)(version&gt;=1.4.0))'/>
-    </requirement>
-    <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(&amp;(osgi.wiring.package=javax.mail.util)(version&gt;=1.4.0))'/>
-    </requirement>
-    <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(osgi.wiring.package=javax.net)'/>
-    </requirement>
-    <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(osgi.wiring.package=javax.net.ssl)'/>
-    </requirement>
-    <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(osgi.wiring.package=javax.security.auth.callback)'/>
-    </requirement>
-    <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(osgi.wiring.package=javax.security.auth.x500)'/>
-    </requirement>
-    <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(osgi.wiring.package=javax.security.sasl)'/>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.eclipse.jetty.jmx)(version&gt;=9.0.0))'/>
       <directive name='resolution' value='optional'/>
     </requirement>
     <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(osgi.wiring.package=javax.xml.transform)'/>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.eclipse.jetty.server)(version&gt;=9.0.0)(!(version&gt;=10.0.0)))'/>
     </requirement>
     <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(osgi.wiring.package=javax.xml.transform.stream)'/>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.eclipse.jetty.server.handler)(version&gt;=9.0.0)(!(version&gt;=10.0.0)))'/>
     </requirement>
     <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(osgi.wiring.package=sun.security.util)'/>
-      <directive name='resolution' value='optional'/>
-    </requirement>
-  </resource>
-  <resource>
-    <capability namespace='osgi.identity'>
-      <attribute name='osgi.identity' value='com.orientechnologies.orientdb-enterprise'/>
-      <attribute name='type' value='osgi.bundle'/>
-      <attribute name='version' type='Version' value='1.5.1'/>
-    </capability>
-    <capability namespace='osgi.content'>
-      <attribute name='osgi.content' value='4a0a5da5bf1c98b0efb7ca11b49fc47283705880217b8a7b4e496a05d0afffc1'/>
-      <attribute name='url' value='com.orientechnologies.orientdb-enterprise/com.orientechnologies.orientdb-enterprise-1.5.1.jar'/>
-      <attribute name='size' type='Long' value='33969'/>
-      <attribute name='mime' value='application/vnd.osgi.bundle'/>
-    </capability>
-    <capability namespace='osgi.wiring.bundle'>
-      <attribute name='osgi.wiring.bundle' value='com.orientechnologies.orientdb-enterprise'/>
-      <attribute name='bundle-version' type='Version' value='1.5.1'/>
-    </capability>
-    <capability namespace='osgi.wiring.host'>
-      <attribute name='osgi.wiring.host' value='com.orientechnologies.orientdb-enterprise'/>
-      <attribute name='bundle-version' type='Version' value='1.5.1'/>
-    </capability>
-    <capability namespace='osgi.wiring.package'>
-      <attribute name='osgi.wiring.package' value='com.orientechnologies.orient.enterprise.channel.binary'/>
-      <attribute name='version' type='Version' value='1.5.1'/>
-      <attribute name='bundle-symbolic-name' value='com.orientechnologies.orientdb-enterprise'/>
-      <attribute name='bundle-version' type='Version' value='1.5.1'/>
-    </capability>
-    <capability namespace='osgi.wiring.package'>
-      <attribute name='osgi.wiring.package' value='com.orientechnologies.orient.enterprise.channel.text'/>
-      <attribute name='version' type='Version' value='1.5.1'/>
-      <attribute name='bundle-symbolic-name' value='com.orientechnologies.orientdb-enterprise'/>
-      <attribute name='bundle-version' type='Version' value='1.5.1'/>
-    </capability>
-    <capability namespace='osgi.wiring.package'>
-      <attribute name='osgi.wiring.package' value='com.orientechnologies.orient.enterprise.channel'/>
-      <attribute name='version' type='Version' value='1.5.1'/>
-      <attribute name='bundle-symbolic-name' value='com.orientechnologies.orientdb-enterprise'/>
-      <attribute name='bundle-version' type='Version' value='1.5.1'/>
-    </capability>
-    <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.common.concur)'/>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.eclipse.jetty.util)(version&gt;=9.0.0)(!(version&gt;=10.0.0)))'/>
     </requirement>
     <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.common.concur.lock)'/>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.eclipse.jetty.util.annotation)(version&gt;=9.0.0)(!(version&gt;=10.0.0)))'/>
     </requirement>
     <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.common.concur.resource)'/>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.eclipse.jetty.util.component)(version&gt;=9.0.0)(!(version&gt;=10.0.0)))'/>
     </requirement>
     <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.common.exception)'/>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.eclipse.jetty.util.log)(version&gt;=9.0.0)(!(version&gt;=10.0.0)))'/>
     </requirement>
     <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.common.io)'/>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.eclipse.jetty.util.resource)(version&gt;=9.0.0)(!(version&gt;=10.0.0)))'/>
     </requirement>
     <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.common.log)'/>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.eclipse.jetty.webapp)(version&gt;=9.0.0)(!(version&gt;=10.0.0)))'/>
     </requirement>
     <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.common.profiler)'/>
-    </requirement>
-    <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.common.thread)'/>
-    </requirement>
-    <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.common.util)'/>
-    </requirement>
-    <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.core)'/>
-    </requirement>
-    <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.core.config)'/>
-    </requirement>
-    <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.core.db.record)'/>
-    </requirement>
-    <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.core.exception)'/>
-    </requirement>
-    <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.core.id)'/>
-    </requirement>
-    <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.core.profiler)'/>
-    </requirement>
-    <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.core.record)'/>
-    </requirement>
-    <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.core.version)'/>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.eclipse.jetty.xml)(version&gt;=9.0.0)(!(version&gt;=10.0.0)))'/>
     </requirement>
     <requirement namespace='osgi.ee'>
-      <directive name='filter' value='(osgi.ee=JavaSE-1.6)'/>
+      <directive name='filter' value='(osgi.ee=JavaSE-1.7)'/>
     </requirement>
   </resource>
   <resource>
     <capability namespace='osgi.identity'>
-      <attribute name='osgi.identity' value='com.orientechnologies.orientdb-server'/>
+      <attribute name='osgi.identity' value='org.eclipse.jetty.security'/>
       <attribute name='type' value='osgi.bundle'/>
-      <attribute name='version' type='Version' value='1.5.1'/>
+      <attribute name='version' type='Version' value='9.0.6.v20130930'/>
     </capability>
     <capability namespace='osgi.content'>
-      <attribute name='osgi.content' value='2959160641d1efdeca65285099a14fc0e262c80e17d5eadac25d365d35f1b0ba'/>
-      <attribute name='url' value='com.orientechnologies.orientdb-server/com.orientechnologies.orientdb-server-1.5.1.jar'/>
-      <attribute name='size' type='Long' value='373423'/>
+      <attribute name='osgi.content' value='711079a93779d204b1ced63b18ab186716170158a329648a767b7c146f880727'/>
+      <attribute name='url' value='org.eclipse.jetty.security/org.eclipse.jetty.security-9.0.6.jar'/>
+      <attribute name='size' type='Long' value='92191'/>
       <attribute name='mime' value='application/vnd.osgi.bundle'/>
     </capability>
     <capability namespace='osgi.wiring.bundle'>
-      <attribute name='osgi.wiring.bundle' value='com.orientechnologies.orientdb-server'/>
-      <attribute name='bundle-version' type='Version' value='1.5.1'/>
+      <attribute name='osgi.wiring.bundle' value='org.eclipse.jetty.security'/>
+      <attribute name='bundle-version' type='Version' value='9.0.6.v20130930'/>
     </capability>
     <capability namespace='osgi.wiring.host'>
-      <attribute name='osgi.wiring.host' value='com.orientechnologies.orientdb-server'/>
-      <attribute name='bundle-version' type='Version' value='1.5.1'/>
+      <attribute name='osgi.wiring.host' value='org.eclipse.jetty.security'/>
+      <attribute name='bundle-version' type='Version' value='9.0.6.v20130930'/>
     </capability>
     <capability namespace='osgi.wiring.package'>
-      <attribute name='osgi.wiring.package' value='com.orientechnologies.orient.server.network.protocol.http'/>
-      <attribute name='version' type='Version' value='1.5.1'/>
-      <attribute name='bundle-symbolic-name' value='com.orientechnologies.orientdb-server'/>
-      <attribute name='bundle-version' type='Version' value='1.5.1'/>
+      <attribute name='osgi.wiring.package' value='org.eclipse.jetty.security'/>
+      <attribute name='version' type='Version' value='9.0.6'/>
+      <attribute name='bundle-symbolic-name' value='org.eclipse.jetty.security'/>
+      <attribute name='bundle-version' type='Version' value='9.0.6.v20130930'/>
+      <directive name='uses' value='javax.servlet,org.eclipse.jetty.server,org.eclipse.jetty.util.security,org.eclipse.jetty.http,javax.servlet.annotation,javax.servlet.http,org.eclipse.jetty.security.authentication,javax.security.auth,org.eclipse.jetty.util.resource,org.eclipse.jetty.util.log,org.eclipse.jetty.util,org.eclipse.jetty.util.component,org.eclipse.jetty.server.handler,org.ietf.jgss'/>
     </capability>
     <capability namespace='osgi.wiring.package'>
-      <attribute name='osgi.wiring.package' value='com.orientechnologies.orient.server.distributed'/>
-      <attribute name='version' type='Version' value='1.5.1'/>
-      <attribute name='bundle-symbolic-name' value='com.orientechnologies.orientdb-server'/>
-      <attribute name='bundle-version' type='Version' value='1.5.1'/>
+      <attribute name='osgi.wiring.package' value='org.eclipse.jetty.security.authentication'/>
+      <attribute name='version' type='Version' value='9.0.6'/>
+      <attribute name='bundle-symbolic-name' value='org.eclipse.jetty.security'/>
+      <attribute name='bundle-version' type='Version' value='9.0.6.v20130930'/>
+      <directive name='uses' value='javax.servlet,org.eclipse.jetty.server,org.eclipse.jetty.security,org.eclipse.jetty.http,javax.servlet.http,org.eclipse.jetty.util,org.eclipse.jetty.util.security,org.eclipse.jetty.util.log,org.eclipse.jetty.server.session,javax.security.auth'/>
+    </capability>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.security.auth)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.security.cert)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=javax.servlet)(version&gt;=2.6.0))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=javax.servlet.annotation)(version&gt;=2.6.0))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=javax.servlet.http)(version&gt;=2.6.0))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.eclipse.jetty.http)(version&gt;=9.0.0)(!(version&gt;=10.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.eclipse.jetty.server)(version&gt;=9.0.0)(!(version&gt;=10.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.eclipse.jetty.server.handler)(version&gt;=9.0.0)(!(version&gt;=10.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.eclipse.jetty.server.session)(version&gt;=9.0.0)(!(version&gt;=10.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.eclipse.jetty.util)(version&gt;=9.0.0)(!(version&gt;=10.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.eclipse.jetty.util.component)(version&gt;=9.0.0)(!(version&gt;=10.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.eclipse.jetty.util.log)(version&gt;=9.0.0)(!(version&gt;=10.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.eclipse.jetty.util.resource)(version&gt;=9.0.0)(!(version&gt;=10.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.eclipse.jetty.util.security)(version&gt;=9.0.0)(!(version&gt;=10.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.ietf.jgss)'/>
+    </requirement>
+    <requirement namespace='osgi.ee'>
+      <directive name='filter' value='(osgi.ee=JavaSE-1.7)'/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace='osgi.identity'>
+      <attribute name='osgi.identity' value='jackson-jaxrs'/>
+      <attribute name='type' value='osgi.bundle'/>
+      <attribute name='version' type='Version' value='1.9.13'/>
+    </capability>
+    <capability namespace='osgi.content'>
+      <attribute name='osgi.content' value='1770570a6ba5c87a4795c0aeb40ee7c5fe5e31df64ef1d4795a0d427796b84bb'/>
+      <attribute name='url' value='jackson-jaxrs/jackson-jaxrs-1.9.13.jar'/>
+      <attribute name='size' type='Long' value='18336'/>
+      <attribute name='mime' value='application/vnd.osgi.bundle'/>
+    </capability>
+    <capability namespace='osgi.wiring.bundle'>
+      <attribute name='osgi.wiring.bundle' value='jackson-jaxrs'/>
+      <attribute name='bundle-version' type='Version' value='1.9.13'/>
+    </capability>
+    <capability namespace='osgi.wiring.host'>
+      <attribute name='osgi.wiring.host' value='jackson-jaxrs'/>
+      <attribute name='bundle-version' type='Version' value='1.9.13'/>
     </capability>
     <capability namespace='osgi.wiring.package'>
-      <attribute name='osgi.wiring.package' value='com.orientechnologies.orient.server.network.protocol.http.command.all'/>
-      <attribute name='version' type='Version' value='1.5.1'/>
-      <attribute name='bundle-symbolic-name' value='com.orientechnologies.orientdb-server'/>
-      <attribute name='bundle-version' type='Version' value='1.5.1'/>
+      <attribute name='osgi.wiring.package' value='org.codehaus.jackson.jaxrs'/>
+      <attribute name='version' type='Version' value='1.9.13'/>
+      <attribute name='bundle-symbolic-name' value='jackson-jaxrs'/>
+      <attribute name='bundle-version' type='Version' value='1.9.13'/>
+      <directive name='uses' value='javax.ws.rs,org.codehaus.jackson.map.annotate,org.codehaus.jackson.map.type,javax.ws.rs.ext,org.codehaus.jackson.type,org.codehaus.jackson.map,org.codehaus.jackson.util,org.codehaus.jackson.map.introspect,org.codehaus.jackson.map.util,org.codehaus.jackson,javax.ws.rs.core'/>
+    </capability>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.ws.rs)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.ws.rs.core)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.ws.rs.ext)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.codehaus.jackson)(version&gt;=1.9.13))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.codehaus.jackson.map)(version&gt;=1.9.13))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.codehaus.jackson.map.annotate)(version&gt;=1.9.13))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.codehaus.jackson.map.introspect)(version&gt;=1.9.13))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.codehaus.jackson.map.type)(version&gt;=1.9.13))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.codehaus.jackson.map.util)(version&gt;=1.9.13))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.codehaus.jackson.type)(version&gt;=1.9.13))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.codehaus.jackson.util)(version&gt;=1.9.13))'/>
+    </requirement>
+    <requirement namespace='osgi.ee'>
+      <directive name='filter' value='(|(osgi.ee=J2SE-1.5)(osgi.ee=JavaSE-1.6))'/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace='osgi.identity'>
+      <attribute name='osgi.identity' value='javax.ws.rs-api'/>
+      <attribute name='type' value='osgi.bundle'/>
+      <attribute name='version' type='Version' value='2.0.0'/>
+    </capability>
+    <capability namespace='osgi.content'>
+      <attribute name='osgi.content' value='ca88fcb9ce85aac4f77e42eac486aa7fde6ead6a545d74ccef6089241c84db53'/>
+      <attribute name='url' value='javax.ws.rs-api/javax.ws.rs-api-2.0.0.jar'/>
+      <attribute name='size' type='Long' value='112758'/>
+      <attribute name='mime' value='application/vnd.osgi.bundle'/>
+    </capability>
+    <capability namespace='osgi.wiring.bundle'>
+      <attribute name='osgi.wiring.bundle' value='javax.ws.rs-api'/>
+      <attribute name='bundle-version' type='Version' value='2.0.0'/>
+    </capability>
+    <capability namespace='osgi.wiring.host'>
+      <attribute name='osgi.wiring.host' value='javax.ws.rs-api'/>
+      <attribute name='bundle-version' type='Version' value='2.0.0'/>
     </capability>
     <capability namespace='osgi.wiring.package'>
-      <attribute name='osgi.wiring.package' value='com.orientechnologies.orient.server'/>
-      <attribute name='version' type='Version' value='1.5.1'/>
-      <attribute name='bundle-symbolic-name' value='com.orientechnologies.orientdb-server'/>
-      <attribute name='bundle-version' type='Version' value='1.5.1'/>
+      <attribute name='osgi.wiring.package' value='javax.ws.rs'/>
+      <attribute name='version' type='Version' value='2.0.0'/>
+      <attribute name='bundle-symbolic-name' value='javax.ws.rs-api'/>
+      <attribute name='bundle-version' type='Version' value='2.0.0'/>
+      <directive name='uses' value='javax.ws.rs.core,javax.ws.rs.ext'/>
     </capability>
     <capability namespace='osgi.wiring.package'>
-      <attribute name='osgi.wiring.package' value='com.orientechnologies.orient.server.managed'/>
-      <attribute name='version' type='Version' value='1.5.1'/>
-      <attribute name='bundle-symbolic-name' value='com.orientechnologies.orientdb-server'/>
-      <attribute name='bundle-version' type='Version' value='1.5.1'/>
+      <attribute name='osgi.wiring.package' value='javax.ws.rs.client'/>
+      <attribute name='version' type='Version' value='2.0.0'/>
+      <attribute name='bundle-symbolic-name' value='javax.ws.rs-api'/>
+      <attribute name='bundle-version' type='Version' value='2.0.0'/>
+      <directive name='uses' value='javax.ws.rs.core,javax.net.ssl,javax.ws.rs'/>
     </capability>
     <capability namespace='osgi.wiring.package'>
-      <attribute name='osgi.wiring.package' value='com.orientechnologies.orient.server.network.protocol.http.command'/>
-      <attribute name='version' type='Version' value='1.5.1'/>
-      <attribute name='bundle-symbolic-name' value='com.orientechnologies.orientdb-server'/>
-      <attribute name='bundle-version' type='Version' value='1.5.1'/>
+      <attribute name='osgi.wiring.package' value='javax.ws.rs.container'/>
+      <attribute name='version' type='Version' value='2.0.0'/>
+      <attribute name='bundle-symbolic-name' value='javax.ws.rs-api'/>
+      <attribute name='bundle-version' type='Version' value='2.0.0'/>
+      <directive name='uses' value='javax.ws.rs.core'/>
     </capability>
     <capability namespace='osgi.wiring.package'>
-      <attribute name='osgi.wiring.package' value='com.orientechnologies.orient.server.config'/>
-      <attribute name='version' type='Version' value='1.5.1'/>
-      <attribute name='bundle-symbolic-name' value='com.orientechnologies.orientdb-server'/>
-      <attribute name='bundle-version' type='Version' value='1.5.1'/>
+      <attribute name='osgi.wiring.package' value='javax.ws.rs.core'/>
+      <attribute name='version' type='Version' value='2.0.0'/>
+      <attribute name='bundle-symbolic-name' value='javax.ws.rs-api'/>
+      <attribute name='bundle-version' type='Version' value='2.0.0'/>
+      <directive name='uses' value='javax.ws.rs.ext,javax.ws.rs,javax.xml.bind.annotation.adapters,javax.xml.namespace,javax.xml.bind.annotation'/>
     </capability>
     <capability namespace='osgi.wiring.package'>
-      <attribute name='osgi.wiring.package' value='com.orientechnologies.orient.server.handler'/>
-      <attribute name='version' type='Version' value='1.5.1'/>
-      <attribute name='bundle-symbolic-name' value='com.orientechnologies.orientdb-server'/>
-      <attribute name='bundle-version' type='Version' value='1.5.1'/>
-    </capability>
-    <capability namespace='osgi.wiring.package'>
-      <attribute name='osgi.wiring.package' value='com.orientechnologies.orient.server.distributed.conflict'/>
-      <attribute name='version' type='Version' value='1.5.1'/>
-      <attribute name='bundle-symbolic-name' value='com.orientechnologies.orientdb-server'/>
-      <attribute name='bundle-version' type='Version' value='1.5.1'/>
-    </capability>
-    <capability namespace='osgi.wiring.package'>
-      <attribute name='osgi.wiring.package' value='com.orientechnologies.orient.server.network.protocol.http.multipart'/>
-      <attribute name='version' type='Version' value='1.5.1'/>
-      <attribute name='bundle-symbolic-name' value='com.orientechnologies.orientdb-server'/>
-      <attribute name='bundle-version' type='Version' value='1.5.1'/>
-    </capability>
-    <capability namespace='osgi.wiring.package'>
-      <attribute name='osgi.wiring.package' value='com.orientechnologies.orient.server.network.protocol.binary'/>
-      <attribute name='version' type='Version' value='1.5.1'/>
-      <attribute name='bundle-symbolic-name' value='com.orientechnologies.orientdb-server'/>
-      <attribute name='bundle-version' type='Version' value='1.5.1'/>
-    </capability>
-    <capability namespace='osgi.wiring.package'>
-      <attribute name='osgi.wiring.package' value='com.orientechnologies.orient.server.network'/>
-      <attribute name='version' type='Version' value='1.5.1'/>
-      <attribute name='bundle-symbolic-name' value='com.orientechnologies.orientdb-server'/>
-      <attribute name='bundle-version' type='Version' value='1.5.1'/>
-    </capability>
-    <capability namespace='osgi.wiring.package'>
-      <attribute name='osgi.wiring.package' value='com.orientechnologies.orient.server.network.protocol.http.command.put'/>
-      <attribute name='version' type='Version' value='1.5.1'/>
-      <attribute name='bundle-symbolic-name' value='com.orientechnologies.orientdb-server'/>
-      <attribute name='bundle-version' type='Version' value='1.5.1'/>
-    </capability>
-    <capability namespace='osgi.wiring.package'>
-      <attribute name='osgi.wiring.package' value='com.orientechnologies.orient.server.tx'/>
-      <attribute name='version' type='Version' value='1.5.1'/>
-      <attribute name='bundle-symbolic-name' value='com.orientechnologies.orientdb-server'/>
-      <attribute name='bundle-version' type='Version' value='1.5.1'/>
-    </capability>
-    <capability namespace='osgi.wiring.package'>
-      <attribute name='osgi.wiring.package' value='com.orientechnologies.orient.server.plugin.mail'/>
-      <attribute name='version' type='Version' value='1.5.1'/>
-      <attribute name='bundle-symbolic-name' value='com.orientechnologies.orientdb-server'/>
-      <attribute name='bundle-version' type='Version' value='1.5.1'/>
-    </capability>
-    <capability namespace='osgi.wiring.package'>
-      <attribute name='osgi.wiring.package' value='com.orientechnologies.orient.server.network.protocol.http.command.delete'/>
-      <attribute name='version' type='Version' value='1.5.1'/>
-      <attribute name='bundle-symbolic-name' value='com.orientechnologies.orientdb-server'/>
-      <attribute name='bundle-version' type='Version' value='1.5.1'/>
-    </capability>
-    <capability namespace='osgi.wiring.package'>
-      <attribute name='osgi.wiring.package' value='com.orientechnologies.orient.server.journal'/>
-      <attribute name='version' type='Version' value='1.5.1'/>
-      <attribute name='bundle-symbolic-name' value='com.orientechnologies.orientdb-server'/>
-      <attribute name='bundle-version' type='Version' value='1.5.1'/>
-    </capability>
-    <capability namespace='osgi.wiring.package'>
-      <attribute name='osgi.wiring.package' value='com.orientechnologies.orient.server.network.protocol.http.command.options'/>
-      <attribute name='version' type='Version' value='1.5.1'/>
-      <attribute name='bundle-symbolic-name' value='com.orientechnologies.orientdb-server'/>
-      <attribute name='bundle-version' type='Version' value='1.5.1'/>
-    </capability>
-    <capability namespace='osgi.wiring.package'>
-      <attribute name='osgi.wiring.package' value='com.orientechnologies.orient.server.network.protocol'/>
-      <attribute name='version' type='Version' value='1.5.1'/>
-      <attribute name='bundle-symbolic-name' value='com.orientechnologies.orientdb-server'/>
-      <attribute name='bundle-version' type='Version' value='1.5.1'/>
-    </capability>
-    <capability namespace='osgi.wiring.package'>
-      <attribute name='osgi.wiring.package' value='com.orientechnologies.orient.server.distributed.task'/>
-      <attribute name='version' type='Version' value='1.5.1'/>
-      <attribute name='bundle-symbolic-name' value='com.orientechnologies.orientdb-server'/>
-      <attribute name='bundle-version' type='Version' value='1.5.1'/>
-    </capability>
-    <capability namespace='osgi.wiring.package'>
-      <attribute name='osgi.wiring.package' value='com.orientechnologies.orient.server.network.protocol.http.command.get'/>
-      <attribute name='version' type='Version' value='1.5.1'/>
-      <attribute name='bundle-symbolic-name' value='com.orientechnologies.orientdb-server'/>
-      <attribute name='bundle-version' type='Version' value='1.5.1'/>
-    </capability>
-    <capability namespace='osgi.wiring.package'>
-      <attribute name='osgi.wiring.package' value='com.orientechnologies.orient.server.network.protocol.http.command.post'/>
-      <attribute name='version' type='Version' value='1.5.1'/>
-      <attribute name='bundle-symbolic-name' value='com.orientechnologies.orientdb-server'/>
-      <attribute name='bundle-version' type='Version' value='1.5.1'/>
-    </capability>
-    <capability namespace='osgi.wiring.package'>
-      <attribute name='osgi.wiring.package' value='com.orientechnologies.orient.server.schedule'/>
-      <attribute name='version' type='Version' value='1.5.1'/>
-      <attribute name='bundle-symbolic-name' value='com.orientechnologies.orientdb-server'/>
-      <attribute name='bundle-version' type='Version' value='1.5.1'/>
+      <attribute name='osgi.wiring.package' value='javax.ws.rs.ext'/>
+      <attribute name='version' type='Version' value='2.0.0'/>
+      <attribute name='bundle-symbolic-name' value='javax.ws.rs-api'/>
+      <attribute name='bundle-version' type='Version' value='2.0.0'/>
+      <directive name='uses' value='javax.ws.rs.core,javax.ws.rs'/>
     </capability>
     <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.common.collection)'/>
-    </requirement>
-    <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.common.concur)'/>
-    </requirement>
-    <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.common.concur.lock)'/>
-    </requirement>
-    <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.common.concur.resource)'/>
-    </requirement>
-    <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.common.exception)'/>
-    </requirement>
-    <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.common.io)'/>
-    </requirement>
-    <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.common.listener)'/>
-    </requirement>
-    <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.common.log)'/>
-    </requirement>
-    <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.common.parser)'/>
-    </requirement>
-    <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.common.profiler)'/>
-    </requirement>
-    <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.common.thread)'/>
-    </requirement>
-    <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.common.util)'/>
-    </requirement>
-    <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.client.db)'/>
-    </requirement>
-    <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.core)'/>
-    </requirement>
-    <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.core.cache)'/>
-    </requirement>
-    <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.core.command)'/>
-    </requirement>
-    <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.core.command.script)'/>
-    </requirement>
-    <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.core.config)'/>
-    </requirement>
-    <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.core.db)'/>
-    </requirement>
-    <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.core.db.document)'/>
-    </requirement>
-    <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.core.db.raw)'/>
-    </requirement>
-    <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.core.db.record)'/>
-    </requirement>
-    <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.core.db.tool)'/>
-    </requirement>
-    <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.core.dictionary)'/>
-    </requirement>
-    <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.core.exception)'/>
-    </requirement>
-    <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.core.fetch)'/>
-    </requirement>
-    <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.core.fetch.remote)'/>
-    </requirement>
-    <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.core.hook)'/>
-    </requirement>
-    <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.core.id)'/>
-    </requirement>
-    <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.core.index)'/>
-    </requirement>
-    <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.core.iterator)'/>
-    </requirement>
-    <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.core.metadata)'/>
-    </requirement>
-    <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.core.metadata.function)'/>
-    </requirement>
-    <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.core.metadata.schema)'/>
-    </requirement>
-    <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.core.metadata.security)'/>
-    </requirement>
-    <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.core.processor)'/>
-    </requirement>
-    <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.core.profiler)'/>
-    </requirement>
-    <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.core.query)'/>
-    </requirement>
-    <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.core.record)'/>
-    </requirement>
-    <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.core.record.impl)'/>
-    </requirement>
-    <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.core.schedule)'/>
-    </requirement>
-    <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.core.security)'/>
-    </requirement>
-    <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.core.serialization)'/>
-    </requirement>
-    <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.core.serialization.serializer)'/>
-    </requirement>
-    <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.core.serialization.serializer.record)'/>
-    </requirement>
-    <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.core.serialization.serializer.record.string)'/>
-    </requirement>
-    <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.core.serialization.serializer.stream)'/>
-    </requirement>
-    <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.core.sql)'/>
-    </requirement>
-    <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.core.sql.query)'/>
-    </requirement>
-    <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.core.storage)'/>
-    </requirement>
-    <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.core.storage.fs)'/>
-    </requirement>
-    <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.core.storage.impl.local)'/>
-    </requirement>
-    <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.core.storage.impl.memory)'/>
-    </requirement>
-    <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.core.tx)'/>
-    </requirement>
-    <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.core.version)'/>
-    </requirement>
-    <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.enterprise.channel)'/>
-    </requirement>
-    <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.enterprise.channel.binary)'/>
-    </requirement>
-    <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(osgi.wiring.package=com.orientechnologies.orient.enterprise.channel.text)'/>
-    </requirement>
-    <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(osgi.wiring.package=javax.activation)'/>
-    </requirement>
-    <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(osgi.wiring.package=javax.mail)'/>
-    </requirement>
-    <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(osgi.wiring.package=javax.mail.internet)'/>
-    </requirement>
-    <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(osgi.wiring.package=javax.management)'/>
-    </requirement>
-    <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(osgi.wiring.package=javax.script)'/>
-    </requirement>
-    <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(osgi.wiring.package=javax.xml.bind)'/>
+      <directive name='filter' value='(osgi.wiring.package=javax.net.ssl)'/>
     </requirement>
     <requirement namespace='osgi.wiring.package'>
       <directive name='filter' value='(osgi.wiring.package=javax.xml.bind.annotation)'/>
     </requirement>
     <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(osgi.wiring.package=javax.xml.validation)'/>
+      <directive name='filter' value='(osgi.wiring.package=javax.xml.bind.annotation.adapters)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.xml.namespace)'/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace='osgi.identity'>
+      <attribute name='osgi.identity' value='org.eclipse.jetty.util'/>
+      <attribute name='type' value='osgi.bundle'/>
+      <attribute name='version' type='Version' value='9.0.6.v20130930'/>
+    </capability>
+    <capability namespace='osgi.content'>
+      <attribute name='osgi.content' value='de479060906e3b1ca44546b3e6c88c8ef805e6ca50ac1a63c7dd3430144b56f6'/>
+      <attribute name='url' value='org.eclipse.jetty.util/org.eclipse.jetty.util-9.0.6.jar'/>
+      <attribute name='size' type='Long' value='339806'/>
+      <attribute name='mime' value='application/vnd.osgi.bundle'/>
+    </capability>
+    <capability namespace='osgi.wiring.bundle'>
+      <attribute name='osgi.wiring.bundle' value='org.eclipse.jetty.util'/>
+      <attribute name='bundle-version' type='Version' value='9.0.6.v20130930'/>
+    </capability>
+    <capability namespace='osgi.wiring.host'>
+      <attribute name='osgi.wiring.host' value='org.eclipse.jetty.util'/>
+      <attribute name='bundle-version' type='Version' value='9.0.6.v20130930'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.eclipse.jetty.util.annotation'/>
+      <attribute name='version' type='Version' value='9.0.6'/>
+      <attribute name='bundle-symbolic-name' value='org.eclipse.jetty.util'/>
+      <attribute name='bundle-version' type='Version' value='9.0.6.v20130930'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.eclipse.jetty.util.security'/>
+      <attribute name='version' type='Version' value='9.0.6'/>
+      <attribute name='bundle-symbolic-name' value='org.eclipse.jetty.util'/>
+      <attribute name='bundle-version' type='Version' value='9.0.6.v20130930'/>
+      <directive name='uses' value='org.eclipse.jetty.util.resource,org.eclipse.jetty.util.log,org.eclipse.jetty.util'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.eclipse.jetty.util.statistic'/>
+      <attribute name='version' type='Version' value='9.0.6'/>
+      <attribute name='bundle-symbolic-name' value='org.eclipse.jetty.util'/>
+      <attribute name='bundle-version' type='Version' value='9.0.6.v20130930'/>
+      <directive name='uses' value='org.eclipse.jetty.util'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.eclipse.jetty.util.thread'/>
+      <attribute name='version' type='Version' value='9.0.6'/>
+      <attribute name='bundle-symbolic-name' value='org.eclipse.jetty.util'/>
+      <attribute name='bundle-version' type='Version' value='9.0.6.v20130930'/>
+      <directive name='uses' value='org.eclipse.jetty.util.component,org.eclipse.jetty.util.log,org.eclipse.jetty.util.annotation,org.eclipse.jetty.util'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.eclipse.jetty.util.preventers'/>
+      <attribute name='version' type='Version' value='9.0.6'/>
+      <attribute name='bundle-symbolic-name' value='org.eclipse.jetty.util'/>
+      <attribute name='bundle-version' type='Version' value='9.0.6.v20130930'/>
+      <directive name='uses' value='org.eclipse.jetty.util.log,org.eclipse.jetty.util.component,javax.imageio,javax.xml.parsers'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.eclipse.jetty.util.component'/>
+      <attribute name='version' type='Version' value='9.0.6'/>
+      <attribute name='bundle-symbolic-name' value='org.eclipse.jetty.util'/>
+      <attribute name='bundle-version' type='Version' value='9.0.6.v20130930'/>
+      <directive name='uses' value='org.eclipse.jetty.util.annotation,org.eclipse.jetty.util.log,org.eclipse.jetty.util.resource,org.eclipse.jetty.util'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.eclipse.jetty.util.resource'/>
+      <attribute name='version' type='Version' value='9.0.6'/>
+      <attribute name='bundle-symbolic-name' value='org.eclipse.jetty.util'/>
+      <attribute name='bundle-version' type='Version' value='9.0.6.v20130930'/>
+      <directive name='uses' value='org.eclipse.jetty.util.log,org.eclipse.jetty.util'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.eclipse.jetty.util.log'/>
+      <attribute name='version' type='Version' value='9.0.6'/>
+      <attribute name='bundle-symbolic-name' value='org.eclipse.jetty.util'/>
+      <attribute name='bundle-version' type='Version' value='9.0.6.v20130930'/>
+      <directive name='uses' value='org.slf4j.spi,org.slf4j.helpers,org.slf4j,org.eclipse.jetty.util,org.eclipse.jetty.util.annotation'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.eclipse.jetty.util.ssl'/>
+      <attribute name='version' type='Version' value='9.0.6'/>
+      <attribute name='bundle-symbolic-name' value='org.eclipse.jetty.util'/>
+      <attribute name='bundle-version' type='Version' value='9.0.6.v20130930'/>
+      <directive name='uses' value='javax.net.ssl,org.eclipse.jetty.util.security,org.eclipse.jetty.util.resource,org.eclipse.jetty.util.component,javax.security.cert,org.eclipse.jetty.util.log,org.eclipse.jetty.util'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.eclipse.jetty.util'/>
+      <attribute name='version' type='Version' value='9.0.6'/>
+      <attribute name='bundle-symbolic-name' value='org.eclipse.jetty.util'/>
+      <attribute name='bundle-version' type='Version' value='9.0.6.v20130930'/>
+      <directive name='uses' value='org.eclipse.jetty.util.log,org.eclipse.jetty.util.thread,org.eclipse.jetty.util.resource,javax.servlet,javax.servlet.http,org.eclipse.jetty.util.component,org.eclipse.jetty.util.annotation'/>
+    </capability>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.imageio)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.net.ssl)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.security.cert)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=javax.servlet)(version&gt;=2.6.0))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=javax.servlet.http)(version&gt;=2.6.0))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.xml.parsers)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.slf4j)(version&gt;=1.5.0)(!(version&gt;=2.0.0)))'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.slf4j.helpers)(version&gt;=1.6.0)(!(version&gt;=2.0.0)))'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.slf4j.impl)(version&gt;=1.5.0)(!(version&gt;=2.0.0)))'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.slf4j.spi)(version&gt;=1.6.0)(!(version&gt;=2.0.0)))'/>
+      <directive name='resolution' value='optional'/>
     </requirement>
     <requirement namespace='osgi.ee'>
-      <directive name='filter' value='(osgi.ee=JavaSE-1.6)'/>
+      <directive name='filter' value='(osgi.ee=JavaSE-1.7)'/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace='osgi.identity'>
+      <attribute name='osgi.identity' value='org.eclipse.jetty.xml'/>
+      <attribute name='type' value='osgi.bundle'/>
+      <attribute name='version' type='Version' value='9.0.6.v20130930'/>
+    </capability>
+    <capability namespace='osgi.content'>
+      <attribute name='osgi.content' value='e610ca4dc5263775b8477bb46825890a160c7e3757d4eacadfc2ee51a5e87898'/>
+      <attribute name='url' value='org.eclipse.jetty.xml/org.eclipse.jetty.xml-9.0.6.jar'/>
+      <attribute name='size' type='Long' value='41762'/>
+      <attribute name='mime' value='application/vnd.osgi.bundle'/>
+    </capability>
+    <capability namespace='osgi.wiring.bundle'>
+      <attribute name='osgi.wiring.bundle' value='org.eclipse.jetty.xml'/>
+      <attribute name='bundle-version' type='Version' value='9.0.6.v20130930'/>
+    </capability>
+    <capability namespace='osgi.wiring.host'>
+      <attribute name='osgi.wiring.host' value='org.eclipse.jetty.xml'/>
+      <attribute name='bundle-version' type='Version' value='9.0.6.v20130930'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.eclipse.jetty.xml'/>
+      <attribute name='version' type='Version' value='9.0.6'/>
+      <attribute name='bundle-symbolic-name' value='org.eclipse.jetty.xml'/>
+      <attribute name='bundle-version' type='Version' value='9.0.6.v20130930'/>
+      <directive name='uses' value='org.eclipse.jetty.util.component,org.eclipse.jetty.util.resource,org.eclipse.jetty.util.log,org.eclipse.jetty.util,org.xml.sax,javax.xml.parsers,org.xml.sax.helpers'/>
+    </capability>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.xml.parsers)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.eclipse.jetty.util)(version&gt;=9.0.0)(!(version&gt;=10.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.eclipse.jetty.util.component)(version&gt;=9.0.0)(!(version&gt;=10.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.eclipse.jetty.util.log)(version&gt;=9.0.0)(!(version&gt;=10.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.eclipse.jetty.util.resource)(version&gt;=9.0.0)(!(version&gt;=10.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.xml.sax)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.xml.sax.helpers)'/>
+    </requirement>
+    <requirement namespace='osgi.ee'>
+      <directive name='filter' value='(osgi.ee=JavaSE-1.7)'/>
     </requirement>
   </resource>
 </repository>
