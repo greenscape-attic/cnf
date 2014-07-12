@@ -1,2 +1,384 @@
 <?xml version='1.0' encoding='utf-8'?>
-<repository increment='1342528672992' name='Release' xmlns='http://www.osgi.org/xmlns/repository/v1.0.0'/>
+<repository increment='1386899440052' name='Release' xmlns='http://www.osgi.org/xmlns/repository/v1.0.0'>
+  <resource>
+    <capability namespace='osgi.identity'>
+      <attribute name='osgi.identity' value='org.greenscape.persistence.impl'/>
+      <attribute name='type' value='osgi.bundle'/>
+      <attribute name='version' type='Version' value='0.1.0'/>
+    </capability>
+    <capability namespace='osgi.content'>
+      <attribute name='osgi.content' value='1ef99a909862e74c4af37966152e43587788a0b9d3969101803c4f2b8cebb27c'/>
+      <attribute name='url' value='org.greenscape.persistence.impl/org.greenscape.persistence.impl-0.1.0.jar'/>
+      <attribute name='size' type='Long' value='3524'/>
+      <attribute name='mime' value='application/vnd.osgi.bundle'/>
+    </capability>
+    <capability namespace='osgi.wiring.bundle'>
+      <attribute name='osgi.wiring.bundle' value='org.greenscape.persistence.impl'/>
+      <attribute name='bundle-version' type='Version' value='0.1.0'/>
+    </capability>
+    <capability namespace='osgi.wiring.host'>
+      <attribute name='osgi.wiring.host' value='org.greenscape.persistence.impl'/>
+      <attribute name='bundle-version' type='Version' value='0.1.0'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.greenscape.persistence.util'/>
+      <attribute name='version' type='Version' value='0.1.0'/>
+      <attribute name='bundle-symbolic-name' value='org.greenscape.persistence.impl'/>
+      <attribute name='bundle-version' type='Version' value='0.1.0'/>
+      <directive name='uses' value='org.greenscape.persistence'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.greenscape.persistence.impl'/>
+      <attribute name='version' type='Version' value='0.1.0'/>
+      <attribute name='bundle-symbolic-name' value='org.greenscape.persistence.impl'/>
+      <attribute name='bundle-version' type='Version' value='0.1.0'/>
+      <directive name='uses' value='org.greenscape.persistence'/>
+    </capability>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.greenscape.persistence)(version&gt;=0.2.0)(!(version&gt;=1.0.0)))'/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace='osgi.identity'>
+      <attribute name='osgi.identity' value='org.greenscape.organization.rest'/>
+      <attribute name='type' value='osgi.bundle'/>
+      <attribute name='version' type='Version' value='0.1.0'/>
+    </capability>
+    <capability namespace='osgi.content'>
+      <attribute name='osgi.content' value='aa016997bf022fe61d69f6118d0ff89aa310d25eb817560266c71107da227ce8'/>
+      <attribute name='url' value='org.greenscape.organization.rest/org.greenscape.organization.rest-0.1.0.jar'/>
+      <attribute name='size' type='Long' value='5276'/>
+      <attribute name='mime' value='application/vnd.osgi.bundle'/>
+    </capability>
+    <capability namespace='osgi.wiring.bundle'>
+      <attribute name='osgi.wiring.bundle' value='org.greenscape.organization.rest'/>
+      <attribute name='bundle-version' type='Version' value='0.1.0'/>
+    </capability>
+    <capability namespace='osgi.wiring.host'>
+      <attribute name='osgi.wiring.host' value='org.greenscape.organization.rest'/>
+      <attribute name='bundle-version' type='Version' value='0.1.0'/>
+    </capability>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=javax.ws.rs)(version&gt;=1.1.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=javax.ws.rs.core)(version&gt;=1.1.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.amdatu.web.rest.doc)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.greenscape.organization)(version&gt;=0.2.0)(!(version&gt;=1.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.greenscape.organization.service)(version&gt;=0.1.0)(!(version&gt;=1.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.extender'>
+      <directive name='filter' value='(&amp;(osgi.extender=osgi.ds)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))'/>
+      <directive name='effective' value='active'/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace='osgi.identity'>
+      <attribute name='osgi.identity' value='org.greenscape.greendb.persistence'/>
+      <attribute name='type' value='osgi.bundle'/>
+      <attribute name='version' type='Version' value='0.2.0'/>
+    </capability>
+    <capability namespace='osgi.content'>
+      <attribute name='osgi.content' value='37e2cd1c013d5b5e3e0ab92b47a3c08699ccfee047116695a6051e109478c025'/>
+      <attribute name='url' value='org.greenscape.greendb.persistence/org.greenscape.greendb.persistence-0.2.0.jar'/>
+      <attribute name='size' type='Long' value='6597'/>
+      <attribute name='mime' value='application/vnd.osgi.bundle'/>
+    </capability>
+    <capability namespace='osgi.wiring.bundle'>
+      <attribute name='osgi.wiring.bundle' value='org.greenscape.greendb.persistence'/>
+      <attribute name='bundle-version' type='Version' value='0.2.0'/>
+    </capability>
+    <capability namespace='osgi.wiring.host'>
+      <attribute name='osgi.wiring.host' value='org.greenscape.greendb.persistence'/>
+      <attribute name='bundle-version' type='Version' value='0.2.0'/>
+    </capability>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=com.orientechnologies.orient.core.db)(version&gt;=1.5.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=com.orientechnologies.orient.core.db.document)(version&gt;=1.5.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=com.orientechnologies.orient.core.db.record)(version&gt;=1.5.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=com.orientechnologies.orient.core.id)(version&gt;=1.5.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=com.orientechnologies.orient.core.query)(version&gt;=1.5.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=com.orientechnologies.orient.core.record.impl)(version&gt;=1.5.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=com.orientechnologies.orient.core.sql.query)(version&gt;=1.5.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.greenscape.greendb)(version&gt;=0.1.0)(!(version&gt;=1.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.greenscape.persistence)(version&gt;=0.2.0)(!(version&gt;=1.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.greenscape.persistence.annotations)(version&gt;=0.1.0)(!(version&gt;=1.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.greenscape.persistence.util)(version&gt;=0.1.0)(!(version&gt;=1.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.extender'>
+      <directive name='filter' value='(&amp;(osgi.extender=osgi.ds)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))'/>
+      <directive name='effective' value='active'/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace='osgi.identity'>
+      <attribute name='osgi.identity' value='org.greenscape.persistence'/>
+      <attribute name='type' value='osgi.bundle'/>
+      <attribute name='version' type='Version' value='0.2.0'/>
+    </capability>
+    <capability namespace='osgi.content'>
+      <attribute name='osgi.content' value='92a292ea788451821c48827f88dcf234b385dc373f6385ce262eac824db92cde'/>
+      <attribute name='url' value='org.greenscape.persistence/org.greenscape.persistence-0.2.0.jar'/>
+      <attribute name='size' type='Long' value='7524'/>
+      <attribute name='mime' value='application/vnd.osgi.bundle'/>
+    </capability>
+    <capability namespace='osgi.wiring.bundle'>
+      <attribute name='osgi.wiring.bundle' value='org.greenscape.persistence'/>
+      <attribute name='bundle-version' type='Version' value='0.2.0'/>
+    </capability>
+    <capability namespace='osgi.wiring.host'>
+      <attribute name='osgi.wiring.host' value='org.greenscape.persistence'/>
+      <attribute name='bundle-version' type='Version' value='0.2.0'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.greenscape.persistence'/>
+      <attribute name='version' type='Version' value='0.2.0'/>
+      <attribute name='bundle-symbolic-name' value='org.greenscape.persistence'/>
+      <attribute name='bundle-version' type='Version' value='0.2.0'/>
+      <directive name='uses' value='org.codehaus.jackson.annotate'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.greenscape.persistence.annotations'/>
+      <attribute name='version' type='Version' value='0.1.0'/>
+      <attribute name='bundle-symbolic-name' value='org.greenscape.persistence'/>
+      <attribute name='bundle-version' type='Version' value='0.2.0'/>
+    </capability>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.codehaus.jackson.annotate)(version&gt;=1.9.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace='osgi.identity'>
+      <attribute name='osgi.identity' value='org.greenscape.greendb'/>
+      <attribute name='type' value='osgi.bundle'/>
+      <attribute name='version' type='Version' value='0.1.0'/>
+    </capability>
+    <capability namespace='osgi.content'>
+      <attribute name='osgi.content' value='d340d639aa03b51881ebf6bee51cbd7dc75c28c90e3bcc1d2b38a7cb55284f6a'/>
+      <attribute name='url' value='org.greenscape.greendb/org.greenscape.greendb-0.1.0.jar'/>
+      <attribute name='size' type='Long' value='4590'/>
+      <attribute name='mime' value='application/vnd.osgi.bundle'/>
+    </capability>
+    <capability namespace='osgi.wiring.bundle'>
+      <attribute name='osgi.wiring.bundle' value='org.greenscape.greendb'/>
+      <attribute name='bundle-version' type='Version' value='0.1.0'/>
+    </capability>
+    <capability namespace='osgi.wiring.host'>
+      <attribute name='osgi.wiring.host' value='org.greenscape.greendb'/>
+      <attribute name='bundle-version' type='Version' value='0.1.0'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.greenscape.greendb'/>
+      <attribute name='version' type='Version' value='0.1.0'/>
+      <attribute name='bundle-symbolic-name' value='org.greenscape.greendb'/>
+      <attribute name='bundle-version' type='Version' value='0.1.0'/>
+      <directive name='uses' value='com.orientechnologies.orient.core.db.document'/>
+    </capability>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=com.orientechnologies.orient.core.db)(version&gt;=1.5.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=com.orientechnologies.orient.core.db.document)(version&gt;=1.5.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.greenscape.greendb)(version&gt;=0.1.0)(!(version&gt;=1.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.extender'>
+      <directive name='filter' value='(&amp;(osgi.extender=osgi.ds)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))'/>
+      <directive name='effective' value='active'/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace='osgi.identity'>
+      <attribute name='osgi.identity' value='org.greenscape.organization.persistence'/>
+      <attribute name='type' value='osgi.bundle'/>
+      <attribute name='version' type='Version' value='0.1.0'/>
+    </capability>
+    <capability namespace='osgi.content'>
+      <attribute name='osgi.content' value='a2ca642c68f1add26c03b44144045b72e57aafb373323f32a4194f6f98554da7'/>
+      <attribute name='url' value='org.greenscape.organization.persistence/org.greenscape.organization.persistence-0.1.0.jar'/>
+      <attribute name='size' type='Long' value='1663'/>
+      <attribute name='mime' value='application/vnd.osgi.bundle'/>
+    </capability>
+    <capability namespace='osgi.wiring.bundle'>
+      <attribute name='osgi.wiring.bundle' value='org.greenscape.organization.persistence'/>
+      <attribute name='bundle-version' type='Version' value='0.1.0'/>
+    </capability>
+    <capability namespace='osgi.wiring.host'>
+      <attribute name='osgi.wiring.host' value='org.greenscape.organization.persistence'/>
+      <attribute name='bundle-version' type='Version' value='0.1.0'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.greenscape.organization.persistence'/>
+      <attribute name='version' type='Version' value='0.1.0'/>
+      <attribute name='bundle-symbolic-name' value='org.greenscape.organization.persistence'/>
+      <attribute name='bundle-version' type='Version' value='0.1.0'/>
+      <directive name='uses' value='org.greenscape.organization'/>
+    </capability>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.greenscape.organization)(version&gt;=0.2.0)(!(version&gt;=1.0.0)))'/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace='osgi.identity'>
+      <attribute name='osgi.identity' value='org.greenscape.organization.service.impl'/>
+      <attribute name='type' value='osgi.bundle'/>
+      <attribute name='version' type='Version' value='0.1.0'/>
+    </capability>
+    <capability namespace='osgi.content'>
+      <attribute name='osgi.content' value='388b627f199d02dbb3fd838ccbe977eda7aabe599244cac28c7091a5a8c1f391'/>
+      <attribute name='url' value='org.greenscape.organization.service.impl/org.greenscape.organization.service.impl-0.1.0.jar'/>
+      <attribute name='size' type='Long' value='2667'/>
+      <attribute name='mime' value='application/vnd.osgi.bundle'/>
+    </capability>
+    <capability namespace='osgi.wiring.bundle'>
+      <attribute name='osgi.wiring.bundle' value='org.greenscape.organization.service.impl'/>
+      <attribute name='bundle-version' type='Version' value='0.1.0'/>
+    </capability>
+    <capability namespace='osgi.wiring.host'>
+      <attribute name='osgi.wiring.host' value='org.greenscape.organization.service.impl'/>
+      <attribute name='bundle-version' type='Version' value='0.1.0'/>
+    </capability>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.greenscape.organization)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.greenscape.organization.persistence)(version&gt;=0.1.0)(!(version&gt;=1.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.greenscape.organization.service)(version&gt;=0.1.0)(!(version&gt;=1.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.extender'>
+      <directive name='filter' value='(&amp;(osgi.extender=osgi.ds)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))'/>
+      <directive name='effective' value='active'/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace='osgi.identity'>
+      <attribute name='osgi.identity' value='org.greenscape.organization.service'/>
+      <attribute name='type' value='osgi.bundle'/>
+      <attribute name='version' type='Version' value='0.1.0'/>
+    </capability>
+    <capability namespace='osgi.content'>
+      <attribute name='osgi.content' value='8fbd48d9a2a3ab3bf7c2b12445da92adb6bac492e10dca0c0a612abc8dd70f5b'/>
+      <attribute name='url' value='org.greenscape.organization.service/org.greenscape.organization.service-0.1.0.jar'/>
+      <attribute name='size' type='Long' value='1624'/>
+      <attribute name='mime' value='application/vnd.osgi.bundle'/>
+    </capability>
+    <capability namespace='osgi.wiring.bundle'>
+      <attribute name='osgi.wiring.bundle' value='org.greenscape.organization.service'/>
+      <attribute name='bundle-version' type='Version' value='0.1.0'/>
+    </capability>
+    <capability namespace='osgi.wiring.host'>
+      <attribute name='osgi.wiring.host' value='org.greenscape.organization.service'/>
+      <attribute name='bundle-version' type='Version' value='0.1.0'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.greenscape.organization.service'/>
+      <attribute name='version' type='Version' value='0.1.0'/>
+      <attribute name='bundle-symbolic-name' value='org.greenscape.organization.service'/>
+      <attribute name='bundle-version' type='Version' value='0.1.0'/>
+      <directive name='uses' value='org.greenscape.organization'/>
+    </capability>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.greenscape.organization)(version&gt;=0.2.0)(!(version&gt;=1.0.0)))'/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace='osgi.identity'>
+      <attribute name='osgi.identity' value='org.greenscape.organization'/>
+      <attribute name='type' value='osgi.bundle'/>
+      <attribute name='version' type='Version' value='0.2.0'/>
+    </capability>
+    <capability namespace='osgi.content'>
+      <attribute name='osgi.content' value='70c8828073dd632e05d6be3da96803b66602fd50e1bf2228d13edd13f70b9e01'/>
+      <attribute name='url' value='org.greenscape.organization/org.greenscape.organization-0.2.0.jar'/>
+      <attribute name='size' type='Long' value='3273'/>
+      <attribute name='mime' value='application/vnd.osgi.bundle'/>
+    </capability>
+    <capability namespace='osgi.wiring.bundle'>
+      <attribute name='osgi.wiring.bundle' value='org.greenscape.organization'/>
+      <attribute name='bundle-version' type='Version' value='0.2.0'/>
+    </capability>
+    <capability namespace='osgi.wiring.host'>
+      <attribute name='osgi.wiring.host' value='org.greenscape.organization'/>
+      <attribute name='bundle-version' type='Version' value='0.2.0'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.greenscape.organization'/>
+      <attribute name='version' type='Version' value='0.2.0'/>
+      <attribute name='bundle-symbolic-name' value='org.greenscape.organization'/>
+      <attribute name='bundle-version' type='Version' value='0.2.0'/>
+      <directive name='uses' value='org.greenscape.persistence,org.greenscape.persistence.annotations'/>
+    </capability>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.greenscape.persistence)(version&gt;=0.2.0)(!(version&gt;=1.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.greenscape.persistence.annotations)(version&gt;=0.1.0)(!(version&gt;=1.0.0)))'/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace='osgi.identity'>
+      <attribute name='osgi.identity' value='org.greenscape.organization.persistence.impl'/>
+      <attribute name='type' value='osgi.bundle'/>
+      <attribute name='version' type='Version' value='0.2.0'/>
+    </capability>
+    <capability namespace='osgi.content'>
+      <attribute name='osgi.content' value='248a48cac6e9d4f34c6c2360567d939850b0d4bdf12bc6330e9ddadf8f6a66b2'/>
+      <attribute name='url' value='org.greenscape.organization.persistence.impl/org.greenscape.organization.persistence.impl-0.2.0.jar'/>
+      <attribute name='size' type='Long' value='4148'/>
+      <attribute name='mime' value='application/vnd.osgi.bundle'/>
+    </capability>
+    <capability namespace='osgi.wiring.bundle'>
+      <attribute name='osgi.wiring.bundle' value='org.greenscape.organization.persistence.impl'/>
+      <attribute name='bundle-version' type='Version' value='0.2.0'/>
+    </capability>
+    <capability namespace='osgi.wiring.host'>
+      <attribute name='osgi.wiring.host' value='org.greenscape.organization.persistence.impl'/>
+      <attribute name='bundle-version' type='Version' value='0.2.0'/>
+    </capability>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.greenscape.organization)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.greenscape.organization.persistence)(version&gt;=0.1.0)(!(version&gt;=1.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.greenscape.persistence)(version&gt;=0.2.0)(!(version&gt;=1.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.greenscape.persistence.annotations)(version&gt;=0.1.0)(!(version&gt;=1.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.extender'>
+      <directive name='filter' value='(&amp;(osgi.extender=osgi.ds)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))'/>
+      <directive name='effective' value='active'/>
+    </requirement>
+  </resource>
+</repository>

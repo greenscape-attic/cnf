@@ -14,3 +14,7 @@
 # Git-Descriptor: ${system-allow-fail;git describe --dirty --always}
 # Git-SHA: ${system-allow-fail;git rev-list -1 HEAD}
 
+-plugin:  ${ext.repositories.-plugin},\
+	aQute.bnd.deployer.repository.FixedIndexedRepo;name=Amdatu Release;locations=http://repository.amdatu.org/release/index.xml,\
+	aQute.bnd.deployer.repository.FixedIndexedRepo;name=Amdatu Dependencies;locations=http://repository.amdatu.org/dependencies/index.xml.gz,\
+	aQute.bnd.deployer.repository.FixedIndexedRepo;name=Amdatu Snapshots;locations=http://repository.amdatu.org/snapshot/index.xml.gz
