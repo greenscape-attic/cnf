@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<repository increment='1413603940401' name='Local' xmlns='http://www.osgi.org/xmlns/repository/v1.0.0'>
+<repository increment='1416677019969' name='Local' xmlns='http://www.osgi.org/xmlns/repository/v1.0.0'>
   <resource>
     <capability namespace='osgi.identity'>
       <attribute name='osgi.identity' value='org.glassfish.hk2.external.asm-all-repackaged'/>
@@ -1101,6 +1101,33 @@
   </resource>
   <resource>
     <capability namespace='osgi.identity'>
+      <attribute name='osgi.identity' value='org.apache.felix.webconsole.plugins.memoryusage'/>
+      <attribute name='type' value='osgi.bundle'/>
+      <attribute name='version' type='Version' value='1.0.4'/>
+    </capability>
+    <capability namespace='osgi.content'>
+      <attribute name='osgi.content' value='c73784b8e44866d5a9bc5167eca445b047149e81270492418570128fe521b9ca'/>
+      <attribute name='url' value='org.apache.felix.webconsole.plugins.memoryusage/org.apache.felix.webconsole.plugins.memoryusage-1.0.4.jar'/>
+      <attribute name='size' type='Long' value='50278'/>
+      <attribute name='mime' value='application/vnd.osgi.bundle'/>
+    </capability>
+    <capability namespace='osgi.wiring.bundle'>
+      <attribute name='osgi.wiring.bundle' value='org.apache.felix.webconsole.plugins.memoryusage'/>
+      <attribute name='bundle-version' type='Version' value='1.0.4'/>
+    </capability>
+    <capability namespace='osgi.wiring.host'>
+      <attribute name='osgi.wiring.host' value='org.apache.felix.webconsole.plugins.memoryusage'/>
+      <attribute name='bundle-version' type='Version' value='1.0.4'/>
+    </capability>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.management)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.osgi.framework)(version&gt;=1.3.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace='osgi.identity'>
       <attribute name='osgi.identity' value='org.glassfish.hk2.external.javax.inject'/>
       <attribute name='type' value='osgi.bundle'/>
       <attribute name='version' type='Version' value='2.3.0.b10'/>
@@ -1125,6 +1152,131 @@
       <attribute name='bundle-symbolic-name' value='org.glassfish.hk2.external.javax.inject'/>
       <attribute name='bundle-version' type='Version' value='2.3.0.b10'/>
     </capability>
+  </resource>
+  <resource>
+    <capability namespace='osgi.identity'>
+      <attribute name='osgi.identity' value='org.apache.felix.webconsole.plugins.ds'/>
+      <attribute name='type' value='osgi.bundle'/>
+      <attribute name='version' type='Version' value='1.0.0'/>
+    </capability>
+    <capability namespace='osgi.content'>
+      <attribute name='osgi.content' value='8941423d17de0eeeb424433ccbc56a309f635dfccf8d682183aee345ef970c66'/>
+      <attribute name='url' value='org.apache.felix.webconsole.plugins.ds/org.apache.felix.webconsole.plugins.ds-1.0.0.jar'/>
+      <attribute name='size' type='Long' value='33555'/>
+      <attribute name='mime' value='application/vnd.osgi.bundle'/>
+    </capability>
+    <capability namespace='osgi.wiring.bundle'>
+      <attribute name='osgi.wiring.bundle' value='org.apache.felix.webconsole.plugins.ds'/>
+      <attribute name='bundle-version' type='Version' value='1.0.0'/>
+    </capability>
+    <capability namespace='osgi.wiring.host'>
+      <attribute name='osgi.wiring.host' value='org.apache.felix.webconsole.plugins.ds'/>
+      <attribute name='bundle-version' type='Version' value='1.0.0'/>
+    </capability>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.servlet)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.servlet.http)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.felix.scr)(version&gt;=1.6.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.felix.webconsole)(version&gt;=3.1.0)(!(version&gt;=4.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.json)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.osgi.framework)(version&gt;=1.3.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.osgi.service.cm)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.osgi.service.metatype)(version&gt;=1.1.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.osgi.util.tracker)(version&gt;=1.3.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace='osgi.identity'>
+      <attribute name='osgi.identity' value='org.apache.oltu.oauth2.resourceserver'/>
+      <attribute name='type' value='osgi.bundle'/>
+      <attribute name='version' type='Version' value='1.0.0'/>
+    </capability>
+    <capability namespace='osgi.content'>
+      <attribute name='osgi.content' value='d6fcf7bfcfd7661134448f0de90f06c9df16f9d5e1e314e53877df3566ab7c37'/>
+      <attribute name='url' value='org.apache.oltu.oauth2.resourceserver/org.apache.oltu.oauth2.resourceserver-1.0.0.jar'/>
+      <attribute name='size' type='Long' value='21471'/>
+      <attribute name='mime' value='application/vnd.osgi.bundle'/>
+    </capability>
+    <capability namespace='osgi.wiring.bundle'>
+      <attribute name='osgi.wiring.bundle' value='org.apache.oltu.oauth2.resourceserver'/>
+      <attribute name='bundle-version' type='Version' value='1.0.0'/>
+    </capability>
+    <capability namespace='osgi.wiring.host'>
+      <attribute name='osgi.wiring.host' value='org.apache.oltu.oauth2.resourceserver'/>
+      <attribute name='bundle-version' type='Version' value='1.0.0'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.apache.oltu.oauth2.rs'/>
+      <attribute name='version' type='Version' value='1.0.0'/>
+      <attribute name='bundle-symbolic-name' value='org.apache.oltu.oauth2.resourceserver'/>
+      <attribute name='bundle-version' type='Version' value='1.0.0'/>
+      <directive name='uses' value='org.apache.oltu.oauth2.common.message.types,org.apache.oltu.oauth2.rs.extractor,org.apache.oltu.oauth2.rs.validator,org.apache.oltu.oauth2.common.exception,org.apache.oltu.oauth2.common.validators,org.apache.oltu.oauth2.common.utils,javax.servlet.http'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.apache.oltu.oauth2.rs.request'/>
+      <attribute name='version' type='Version' value='1.0.0'/>
+      <attribute name='bundle-symbolic-name' value='org.apache.oltu.oauth2.resourceserver'/>
+      <attribute name='bundle-version' type='Version' value='1.0.0'/>
+      <directive name='uses' value='org.apache.oltu.oauth2.common.exception,org.apache.oltu.oauth2.common.validators,org.apache.oltu.oauth2.common.message.types,org.apache.oltu.oauth2.rs,org.apache.oltu.oauth2.common,org.apache.oltu.oauth2.common.utils,org.apache.oltu.oauth2.rs.extractor,javax.servlet.http'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.apache.oltu.oauth2.rs.extractor'/>
+      <attribute name='version' type='Version' value='1.0.0'/>
+      <attribute name='bundle-symbolic-name' value='org.apache.oltu.oauth2.resourceserver'/>
+      <attribute name='bundle-version' type='Version' value='1.0.0'/>
+      <directive name='uses' value='javax.servlet.http,org.apache.oltu.oauth2.common.utils,org.apache.oltu.oauth2.rs'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.apache.oltu.oauth2.rs.response'/>
+      <attribute name='version' type='Version' value='1.0.0'/>
+      <attribute name='bundle-symbolic-name' value='org.apache.oltu.oauth2.resourceserver'/>
+      <attribute name='bundle-version' type='Version' value='1.0.0'/>
+      <directive name='uses' value='org.apache.oltu.oauth2.common.message'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.apache.oltu.oauth2.rs.validator'/>
+      <attribute name='version' type='Version' value='1.0.0'/>
+      <attribute name='bundle-symbolic-name' value='org.apache.oltu.oauth2.resourceserver'/>
+      <attribute name='bundle-version' type='Version' value='1.0.0'/>
+      <directive name='uses' value='org.apache.oltu.oauth2.common.exception,org.apache.oltu.oauth2.common.validators,org.apache.oltu.oauth2.common.utils,javax.servlet.http,org.apache.oltu.oauth2.rs'/>
+    </capability>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.servlet.http)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.apache.oltu.oauth2.common)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.apache.oltu.oauth2.common.exception)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.apache.oltu.oauth2.common.message)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.apache.oltu.oauth2.common.message.types)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.apache.oltu.oauth2.common.utils)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.apache.oltu.oauth2.common.validators)'/>
+    </requirement>
   </resource>
   <resource>
     <capability namespace='osgi.identity'>
@@ -1194,6 +1346,79 @@
       <attribute name='bundle-symbolic-name' value='com.fasterxml.jackson.core.jackson-core'/>
       <attribute name='bundle-version' type='Version' value='2.2.3'/>
     </capability>
+  </resource>
+  <resource>
+    <capability namespace='osgi.identity'>
+      <attribute name='osgi.identity' value='org.apache.oltu.oauth2.client'/>
+      <attribute name='type' value='osgi.bundle'/>
+      <attribute name='version' type='Version' value='1.0.0'/>
+    </capability>
+    <capability namespace='osgi.content'>
+      <attribute name='osgi.content' value='8e4e839555a57b074bfe4afa7ca3417b92622cce11b980d68ff6683f5343c963'/>
+      <attribute name='url' value='org.apache.oltu.oauth2.client/org.apache.oltu.oauth2.client-1.0.0.jar'/>
+      <attribute name='size' type='Long' value='31161'/>
+      <attribute name='mime' value='application/vnd.osgi.bundle'/>
+    </capability>
+    <capability namespace='osgi.wiring.bundle'>
+      <attribute name='osgi.wiring.bundle' value='org.apache.oltu.oauth2.client'/>
+      <attribute name='bundle-version' type='Version' value='1.0.0'/>
+    </capability>
+    <capability namespace='osgi.wiring.host'>
+      <attribute name='osgi.wiring.host' value='org.apache.oltu.oauth2.client'/>
+      <attribute name='bundle-version' type='Version' value='1.0.0'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.apache.oltu.oauth2.client.validator'/>
+      <attribute name='version' type='Version' value='1.0.0'/>
+      <attribute name='bundle-symbolic-name' value='org.apache.oltu.oauth2.client'/>
+      <attribute name='bundle-version' type='Version' value='1.0.0'/>
+      <directive name='uses' value='org.apache.oltu.oauth2.common.exception,org.apache.oltu.oauth2.common.utils,org.apache.oltu.oauth2.client.response'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.apache.oltu.oauth2.client.request'/>
+      <attribute name='version' type='Version' value='1.0.0'/>
+      <attribute name='bundle-symbolic-name' value='org.apache.oltu.oauth2.client'/>
+      <attribute name='bundle-version' type='Version' value='1.0.0'/>
+      <directive name='uses' value='org.apache.oltu.oauth2.common.exception,org.apache.oltu.oauth2.common.parameters,org.apache.oltu.oauth2.common.utils,org.apache.oltu.oauth2.common.message,org.apache.oltu.oauth2.common.message.types,org.apache.oltu.oauth2.common'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.apache.oltu.oauth2.client'/>
+      <attribute name='version' type='Version' value='1.0.0'/>
+      <attribute name='bundle-symbolic-name' value='org.apache.oltu.oauth2.client'/>
+      <attribute name='bundle-version' type='Version' value='1.0.0'/>
+      <directive name='uses' value='org.apache.oltu.oauth2.common.exception,org.apache.oltu.oauth2.client.request,org.apache.oltu.oauth2.client.response,org.apache.oltu.oauth2.common.utils'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.apache.oltu.oauth2.client.response'/>
+      <attribute name='version' type='Version' value='1.0.0'/>
+      <attribute name='bundle-symbolic-name' value='org.apache.oltu.oauth2.client'/>
+      <attribute name='bundle-version' type='Version' value='1.0.0'/>
+      <directive name='uses' value='org.apache.oltu.oauth2.common.token,org.apache.oltu.oauth2.common.utils,org.apache.oltu.oauth2.common.exception,org.apache.oltu.oauth2.client.validator,javax.servlet.http'/>
+    </capability>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.servlet.http)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.apache.oltu.oauth2.common)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.apache.oltu.oauth2.common.exception)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.apache.oltu.oauth2.common.message)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.apache.oltu.oauth2.common.message.types)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.apache.oltu.oauth2.common.parameters)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.apache.oltu.oauth2.common.token)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.apache.oltu.oauth2.common.utils)'/>
+    </requirement>
   </resource>
   <resource>
     <capability namespace='osgi.identity'>
@@ -1289,6 +1514,70 @@
       <attribute name='bundle-symbolic-name' value='org.glassfish.hk2.external.javax.inject'/>
       <attribute name='bundle-version' type='Version' value='2.2.0.b21'/>
     </capability>
+  </resource>
+  <resource>
+    <capability namespace='osgi.identity'>
+      <attribute name='osgi.identity' value='org.apache.oltu.oauth2.httpclient4'/>
+      <attribute name='type' value='osgi.bundle'/>
+      <attribute name='version' type='Version' value='1.0.0'/>
+    </capability>
+    <capability namespace='osgi.content'>
+      <attribute name='osgi.content' value='5c81fadd2910fd13bb272eedc24a534f9cc02d152fc5f1efc95dd55cfb98b37a'/>
+      <attribute name='url' value='org.apache.oltu.oauth2.httpclient4/org.apache.oltu.oauth2.httpclient4-1.0.0.jar'/>
+      <attribute name='size' type='Long' value='10947'/>
+      <attribute name='mime' value='application/vnd.osgi.bundle'/>
+    </capability>
+    <capability namespace='osgi.wiring.bundle'>
+      <attribute name='osgi.wiring.bundle' value='org.apache.oltu.oauth2.httpclient4'/>
+      <attribute name='bundle-version' type='Version' value='1.0.0'/>
+    </capability>
+    <capability namespace='osgi.wiring.host'>
+      <attribute name='osgi.wiring.host' value='org.apache.oltu.oauth2.httpclient4'/>
+      <attribute name='bundle-version' type='Version' value='1.0.0'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.apache.oltu.oauth2.httpclient4'/>
+      <attribute name='version' type='Version' value='1.0.0'/>
+      <attribute name='bundle-symbolic-name' value='org.apache.oltu.oauth2.httpclient4'/>
+      <attribute name='bundle-version' type='Version' value='1.0.0'/>
+      <directive name='uses' value='org.apache.oltu.oauth2.client.request,org.apache.http.entity,org.apache.oltu.oauth2.client,org.apache.http.client,org.apache.oltu.oauth2.client.response,org.apache.oltu.oauth2.common.exception,org.apache.http.conn,org.apache.http.impl.client,org.apache.oltu.oauth2.common.utils,org.apache.http.client.methods,org.apache.http.util,org.apache.http'/>
+    </capability>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.apache.http)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.apache.http.client)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.apache.http.client.methods)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.apache.http.conn)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.apache.http.entity)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.apache.http.impl.client)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.apache.http.util)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.apache.oltu.oauth2.client)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.apache.oltu.oauth2.client.request)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.apache.oltu.oauth2.client.response)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.apache.oltu.oauth2.common.exception)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.apache.oltu.oauth2.common.utils)'/>
+    </requirement>
   </resource>
   <resource>
     <capability namespace='osgi.identity'>
@@ -1388,6 +1677,30 @@
     </requirement>
     <requirement namespace='osgi.wiring.package'>
       <directive name='filter' value='(&amp;(osgi.wiring.package=org.jvnet.hk2.component)(version&gt;=2.3.0)(!(version&gt;=3.0.0)))'/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace='osgi.identity'>
+      <attribute name='osgi.identity' value='org.apache.felix.webconsole.plugins.event'/>
+      <attribute name='type' value='osgi.bundle'/>
+      <attribute name='version' type='Version' value='1.1.0'/>
+    </capability>
+    <capability namespace='osgi.content'>
+      <attribute name='osgi.content' value='03c7319d8ff4bc73b45499b2c19d20ac68efbfe14d210d192ecaa0eb256edaf0'/>
+      <attribute name='url' value='org.apache.felix.webconsole.plugins.event/org.apache.felix.webconsole.plugins.event-1.1.0.jar'/>
+      <attribute name='size' type='Long' value='50240'/>
+      <attribute name='mime' value='application/vnd.osgi.bundle'/>
+    </capability>
+    <capability namespace='osgi.wiring.bundle'>
+      <attribute name='osgi.wiring.bundle' value='org.apache.felix.webconsole.plugins.event'/>
+      <attribute name='bundle-version' type='Version' value='1.1.0'/>
+    </capability>
+    <capability namespace='osgi.wiring.host'>
+      <attribute name='osgi.wiring.host' value='org.apache.felix.webconsole.plugins.event'/>
+      <attribute name='bundle-version' type='Version' value='1.1.0'/>
+    </capability>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.osgi.framework)(version&gt;=1.3.0)(!(version&gt;=2.0.0)))'/>
     </requirement>
   </resource>
   <resource>
@@ -1660,6 +1973,108 @@
   </resource>
   <resource>
     <capability namespace='osgi.identity'>
+      <attribute name='osgi.identity' value='org.apache.oltu.oauth2.common'/>
+      <attribute name='type' value='osgi.bundle'/>
+      <attribute name='version' type='Version' value='1.0.0'/>
+    </capability>
+    <capability namespace='osgi.content'>
+      <attribute name='osgi.content' value='1b90fc2908d2421c43b3f1e3bd16637efc21534285bcf9837e3279b1d80c2182'/>
+      <attribute name='url' value='org.apache.oltu.oauth2.common/org.apache.oltu.oauth2.common-1.0.0.jar'/>
+      <attribute name='size' type='Long' value='52313'/>
+      <attribute name='mime' value='application/vnd.osgi.bundle'/>
+    </capability>
+    <capability namespace='osgi.wiring.bundle'>
+      <attribute name='osgi.wiring.bundle' value='org.apache.oltu.oauth2.common'/>
+      <attribute name='bundle-version' type='Version' value='1.0.0'/>
+    </capability>
+    <capability namespace='osgi.wiring.host'>
+      <attribute name='osgi.wiring.host' value='org.apache.oltu.oauth2.common'/>
+      <attribute name='bundle-version' type='Version' value='1.0.0'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.apache.oltu.oauth2.common.exception'/>
+      <attribute name='version' type='Version' value='1.0.0'/>
+      <attribute name='bundle-symbolic-name' value='org.apache.oltu.oauth2.common'/>
+      <attribute name='bundle-version' type='Version' value='1.0.0'/>
+      <directive name='uses' value='org.apache.oltu.oauth2.common.utils'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.apache.oltu.oauth2.common.message.types'/>
+      <attribute name='version' type='Version' value='1.0.0'/>
+      <attribute name='bundle-symbolic-name' value='org.apache.oltu.oauth2.common'/>
+      <attribute name='bundle-version' type='Version' value='1.0.0'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.apache.oltu.oauth2.common.parameters'/>
+      <attribute name='version' type='Version' value='1.0.0'/>
+      <attribute name='bundle-symbolic-name' value='org.apache.oltu.oauth2.common'/>
+      <attribute name='bundle-version' type='Version' value='1.0.0'/>
+      <directive name='uses' value='org.apache.oltu.oauth2.common.exception,org.apache.oltu.oauth2.common.utils,org.apache.oltu.oauth2.common.message'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.apache.oltu.oauth2.common.validators'/>
+      <attribute name='version' type='Version' value='1.0.0'/>
+      <attribute name='bundle-symbolic-name' value='org.apache.oltu.oauth2.common'/>
+      <attribute name='bundle-version' type='Version' value='1.0.0'/>
+      <directive name='uses' value='org.apache.oltu.oauth2.common.exception,org.apache.oltu.oauth2.common.utils,javax.servlet.http'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.apache.oltu.oauth2.common.token'/>
+      <attribute name='version' type='Version' value='1.0.0'/>
+      <attribute name='bundle-symbolic-name' value='org.apache.oltu.oauth2.common'/>
+      <attribute name='bundle-version' type='Version' value='1.0.0'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.apache.oltu.oauth2.common'/>
+      <attribute name='version' type='Version' value='1.0.0'/>
+      <attribute name='bundle-symbolic-name' value='org.apache.oltu.oauth2.common'/>
+      <attribute name='bundle-version' type='Version' value='1.0.0'/>
+      <directive name='uses' value='org.apache.oltu.oauth2.common.message.types'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.apache.oltu.oauth2.common.utils'/>
+      <attribute name='version' type='Version' value='1.0.0'/>
+      <attribute name='bundle-symbolic-name' value='org.apache.oltu.oauth2.common'/>
+      <attribute name='bundle-version' type='Version' value='1.0.0'/>
+      <directive name='uses' value='org.json,org.apache.oltu.oauth2.common.exception,org.apache.commons.codec.binary,javax.servlet.http'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.apache.oltu.oauth2.common.domain.credentials'/>
+      <attribute name='version' type='Version' value='1.0.0'/>
+      <attribute name='bundle-symbolic-name' value='org.apache.oltu.oauth2.common'/>
+      <attribute name='bundle-version' type='Version' value='1.0.0'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.apache.oltu.oauth2.common.domain.client'/>
+      <attribute name='version' type='Version' value='1.0.0'/>
+      <attribute name='bundle-symbolic-name' value='org.apache.oltu.oauth2.common'/>
+      <attribute name='bundle-version' type='Version' value='1.0.0'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.apache.oltu.oauth2.common.error'/>
+      <attribute name='version' type='Version' value='1.0.0'/>
+      <attribute name='bundle-symbolic-name' value='org.apache.oltu.oauth2.common'/>
+      <attribute name='bundle-version' type='Version' value='1.0.0'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.apache.oltu.oauth2.common.message'/>
+      <attribute name='version' type='Version' value='1.0.0'/>
+      <attribute name='bundle-symbolic-name' value='org.apache.oltu.oauth2.common'/>
+      <attribute name='bundle-version' type='Version' value='1.0.0'/>
+      <directive name='uses' value='org.apache.oltu.oauth2.common.exception,org.apache.oltu.oauth2.common.parameters'/>
+    </capability>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.servlet.http)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.apache.commons.codec.binary)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.json)'/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace='osgi.identity'>
       <attribute name='osgi.identity' value='com.fasterxml.jackson.core.jackson-annotations'/>
       <attribute name='type' value='osgi.bundle'/>
       <attribute name='version' type='Version' value='2.3.3'/>
@@ -1683,6 +2098,33 @@
       <attribute name='version' type='Version' value='2.3.3'/>
       <attribute name='bundle-symbolic-name' value='com.fasterxml.jackson.core.jackson-annotations'/>
       <attribute name='bundle-version' type='Version' value='2.3.3'/>
+    </capability>
+  </resource>
+  <resource>
+    <capability namespace='osgi.identity'>
+      <attribute name='osgi.identity' value='org.apache.oltu.oauth2.dynamicreg.common'/>
+      <attribute name='type' value='osgi.bundle'/>
+      <attribute name='version' type='Version' value='1.0.0'/>
+    </capability>
+    <capability namespace='osgi.content'>
+      <attribute name='osgi.content' value='8b0c4c344e0ae50b4b156659b489c209453eaa16e3ee60df86bfd2f7644792f6'/>
+      <attribute name='url' value='org.apache.oltu.oauth2.dynamicreg.common/org.apache.oltu.oauth2.dynamicreg.common-1.0.0.jar'/>
+      <attribute name='size' type='Long' value='11073'/>
+      <attribute name='mime' value='application/vnd.osgi.bundle'/>
+    </capability>
+    <capability namespace='osgi.wiring.bundle'>
+      <attribute name='osgi.wiring.bundle' value='org.apache.oltu.oauth2.dynamicreg.common'/>
+      <attribute name='bundle-version' type='Version' value='1.0.0'/>
+    </capability>
+    <capability namespace='osgi.wiring.host'>
+      <attribute name='osgi.wiring.host' value='org.apache.oltu.oauth2.dynamicreg.common'/>
+      <attribute name='bundle-version' type='Version' value='1.0.0'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.apache.oltu.oauth2.ext.dynamicreg.common'/>
+      <attribute name='version' type='Version' value='1.0.0'/>
+      <attribute name='bundle-symbolic-name' value='org.apache.oltu.oauth2.dynamicreg.common'/>
+      <attribute name='bundle-version' type='Version' value='1.0.0'/>
     </capability>
   </resource>
   <resource>
@@ -2808,6 +3250,75 @@
   </resource>
   <resource>
     <capability namespace='osgi.identity'>
+      <attribute name='osgi.identity' value='com.fasterxml.jackson.core.jackson-core'/>
+      <attribute name='type' value='osgi.bundle'/>
+      <attribute name='version' type='Version' value='2.3.3'/>
+    </capability>
+    <capability namespace='osgi.content'>
+      <attribute name='osgi.content' value='11c9651fd29f0bd87b0014fc3ae18d1157c1d69f1a3b90c97ecb7a179d5d7450'/>
+      <attribute name='url' value='com.fasterxml.jackson.core.jackson-core/com.fasterxml.jackson.core.jackson-core-2.3.3.jar'/>
+      <attribute name='size' type='Long' value='199621'/>
+      <attribute name='mime' value='application/vnd.osgi.bundle'/>
+    </capability>
+    <capability namespace='osgi.wiring.bundle'>
+      <attribute name='osgi.wiring.bundle' value='com.fasterxml.jackson.core.jackson-core'/>
+      <attribute name='bundle-version' type='Version' value='2.3.3'/>
+    </capability>
+    <capability namespace='osgi.wiring.host'>
+      <attribute name='osgi.wiring.host' value='com.fasterxml.jackson.core.jackson-core'/>
+      <attribute name='bundle-version' type='Version' value='2.3.3'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='com.fasterxml.jackson.core'/>
+      <attribute name='version' type='Version' value='2.3.3'/>
+      <attribute name='bundle-symbolic-name' value='com.fasterxml.jackson.core.jackson-core'/>
+      <attribute name='bundle-version' type='Version' value='2.3.3'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='com.fasterxml.jackson.core.io'/>
+      <attribute name='version' type='Version' value='2.3.3'/>
+      <attribute name='bundle-symbolic-name' value='com.fasterxml.jackson.core.jackson-core'/>
+      <attribute name='bundle-version' type='Version' value='2.3.3'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='com.fasterxml.jackson.core.json'/>
+      <attribute name='version' type='Version' value='2.3.3'/>
+      <attribute name='bundle-symbolic-name' value='com.fasterxml.jackson.core.jackson-core'/>
+      <attribute name='bundle-version' type='Version' value='2.3.3'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='com.fasterxml.jackson.core.util'/>
+      <attribute name='version' type='Version' value='2.3.3'/>
+      <attribute name='bundle-symbolic-name' value='com.fasterxml.jackson.core.jackson-core'/>
+      <attribute name='bundle-version' type='Version' value='2.3.3'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='com.fasterxml.jackson.core.base'/>
+      <attribute name='version' type='Version' value='2.3.3'/>
+      <attribute name='bundle-symbolic-name' value='com.fasterxml.jackson.core.jackson-core'/>
+      <attribute name='bundle-version' type='Version' value='2.3.3'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='com.fasterxml.jackson.core.sym'/>
+      <attribute name='version' type='Version' value='2.3.3'/>
+      <attribute name='bundle-symbolic-name' value='com.fasterxml.jackson.core.jackson-core'/>
+      <attribute name='bundle-version' type='Version' value='2.3.3'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='com.fasterxml.jackson.core.type'/>
+      <attribute name='version' type='Version' value='2.3.3'/>
+      <attribute name='bundle-symbolic-name' value='com.fasterxml.jackson.core.jackson-core'/>
+      <attribute name='bundle-version' type='Version' value='2.3.3'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='com.fasterxml.jackson.core.format'/>
+      <attribute name='version' type='Version' value='2.3.3'/>
+      <attribute name='bundle-symbolic-name' value='com.fasterxml.jackson.core.jackson-core'/>
+      <attribute name='bundle-version' type='Version' value='2.3.3'/>
+    </capability>
+  </resource>
+  <resource>
+    <capability namespace='osgi.identity'>
       <attribute name='osgi.identity' value='org.glassfish.jersey.containers.jersey-container-servlet'/>
       <attribute name='type' value='osgi.bundle'/>
       <attribute name='version' type='Version' value='2.13.0'/>
@@ -3065,75 +3576,6 @@
     <requirement namespace='osgi.ee'>
       <directive name='filter' value='(|(osgi.ee=J2SE-1.5)(osgi.ee=JavaSE-1.6))'/>
     </requirement>
-  </resource>
-  <resource>
-    <capability namespace='osgi.identity'>
-      <attribute name='osgi.identity' value='com.fasterxml.jackson.core.jackson-core'/>
-      <attribute name='type' value='osgi.bundle'/>
-      <attribute name='version' type='Version' value='2.3.3'/>
-    </capability>
-    <capability namespace='osgi.content'>
-      <attribute name='osgi.content' value='11c9651fd29f0bd87b0014fc3ae18d1157c1d69f1a3b90c97ecb7a179d5d7450'/>
-      <attribute name='url' value='com.fasterxml.jackson.core.jackson-core/com.fasterxml.jackson.core.jackson-core-2.3.3.jar'/>
-      <attribute name='size' type='Long' value='199621'/>
-      <attribute name='mime' value='application/vnd.osgi.bundle'/>
-    </capability>
-    <capability namespace='osgi.wiring.bundle'>
-      <attribute name='osgi.wiring.bundle' value='com.fasterxml.jackson.core.jackson-core'/>
-      <attribute name='bundle-version' type='Version' value='2.3.3'/>
-    </capability>
-    <capability namespace='osgi.wiring.host'>
-      <attribute name='osgi.wiring.host' value='com.fasterxml.jackson.core.jackson-core'/>
-      <attribute name='bundle-version' type='Version' value='2.3.3'/>
-    </capability>
-    <capability namespace='osgi.wiring.package'>
-      <attribute name='osgi.wiring.package' value='com.fasterxml.jackson.core'/>
-      <attribute name='version' type='Version' value='2.3.3'/>
-      <attribute name='bundle-symbolic-name' value='com.fasterxml.jackson.core.jackson-core'/>
-      <attribute name='bundle-version' type='Version' value='2.3.3'/>
-    </capability>
-    <capability namespace='osgi.wiring.package'>
-      <attribute name='osgi.wiring.package' value='com.fasterxml.jackson.core.io'/>
-      <attribute name='version' type='Version' value='2.3.3'/>
-      <attribute name='bundle-symbolic-name' value='com.fasterxml.jackson.core.jackson-core'/>
-      <attribute name='bundle-version' type='Version' value='2.3.3'/>
-    </capability>
-    <capability namespace='osgi.wiring.package'>
-      <attribute name='osgi.wiring.package' value='com.fasterxml.jackson.core.json'/>
-      <attribute name='version' type='Version' value='2.3.3'/>
-      <attribute name='bundle-symbolic-name' value='com.fasterxml.jackson.core.jackson-core'/>
-      <attribute name='bundle-version' type='Version' value='2.3.3'/>
-    </capability>
-    <capability namespace='osgi.wiring.package'>
-      <attribute name='osgi.wiring.package' value='com.fasterxml.jackson.core.util'/>
-      <attribute name='version' type='Version' value='2.3.3'/>
-      <attribute name='bundle-symbolic-name' value='com.fasterxml.jackson.core.jackson-core'/>
-      <attribute name='bundle-version' type='Version' value='2.3.3'/>
-    </capability>
-    <capability namespace='osgi.wiring.package'>
-      <attribute name='osgi.wiring.package' value='com.fasterxml.jackson.core.base'/>
-      <attribute name='version' type='Version' value='2.3.3'/>
-      <attribute name='bundle-symbolic-name' value='com.fasterxml.jackson.core.jackson-core'/>
-      <attribute name='bundle-version' type='Version' value='2.3.3'/>
-    </capability>
-    <capability namespace='osgi.wiring.package'>
-      <attribute name='osgi.wiring.package' value='com.fasterxml.jackson.core.sym'/>
-      <attribute name='version' type='Version' value='2.3.3'/>
-      <attribute name='bundle-symbolic-name' value='com.fasterxml.jackson.core.jackson-core'/>
-      <attribute name='bundle-version' type='Version' value='2.3.3'/>
-    </capability>
-    <capability namespace='osgi.wiring.package'>
-      <attribute name='osgi.wiring.package' value='com.fasterxml.jackson.core.type'/>
-      <attribute name='version' type='Version' value='2.3.3'/>
-      <attribute name='bundle-symbolic-name' value='com.fasterxml.jackson.core.jackson-core'/>
-      <attribute name='bundle-version' type='Version' value='2.3.3'/>
-    </capability>
-    <capability namespace='osgi.wiring.package'>
-      <attribute name='osgi.wiring.package' value='com.fasterxml.jackson.core.format'/>
-      <attribute name='version' type='Version' value='2.3.3'/>
-      <attribute name='bundle-symbolic-name' value='com.fasterxml.jackson.core.jackson-core'/>
-      <attribute name='bundle-version' type='Version' value='2.3.3'/>
-    </capability>
   </resource>
   <resource>
     <capability namespace='osgi.identity'>
@@ -3427,6 +3869,79 @@
     <requirement namespace='osgi.wiring.package'>
       <directive name='filter' value='(osgi.wiring.package=sun.misc)'/>
       <directive name='resolution' value='optional'/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace='osgi.identity'>
+      <attribute name='osgi.identity' value='org.apache.oltu.oauth2.dynamicreg.client'/>
+      <attribute name='type' value='osgi.bundle'/>
+      <attribute name='version' type='Version' value='1.0.0'/>
+    </capability>
+    <capability namespace='osgi.content'>
+      <attribute name='osgi.content' value='2e41768c8e58c2fb9015e5d5c2ac53c9a50bad0733c9ff562e5307d24e9b6897'/>
+      <attribute name='url' value='org.apache.oltu.oauth2.dynamicreg.client/org.apache.oltu.oauth2.dynamicreg.client-1.0.0.jar'/>
+      <attribute name='size' type='Long' value='15467'/>
+      <attribute name='mime' value='application/vnd.osgi.bundle'/>
+    </capability>
+    <capability namespace='osgi.wiring.bundle'>
+      <attribute name='osgi.wiring.bundle' value='org.apache.oltu.oauth2.dynamicreg.client'/>
+      <attribute name='bundle-version' type='Version' value='1.0.0'/>
+    </capability>
+    <capability namespace='osgi.wiring.host'>
+      <attribute name='osgi.wiring.host' value='org.apache.oltu.oauth2.dynamicreg.client'/>
+      <attribute name='bundle-version' type='Version' value='1.0.0'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.apache.oltu.oauth2.ext.dynamicreg.client'/>
+      <attribute name='version' type='Version' value='1.0.0'/>
+      <attribute name='bundle-symbolic-name' value='org.apache.oltu.oauth2.dynamicreg.client'/>
+      <attribute name='bundle-version' type='Version' value='1.0.0'/>
+      <directive name='uses' value='org.apache.oltu.oauth2.common.exception,org.apache.oltu.oauth2.client.request,org.apache.oltu.oauth2.client,org.apache.oltu.oauth2.client.response,org.apache.oltu.oauth2.ext.dynamicreg.client.response'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.apache.oltu.oauth2.ext.dynamicreg.client.request'/>
+      <attribute name='version' type='Version' value='1.0.0'/>
+      <attribute name='bundle-symbolic-name' value='org.apache.oltu.oauth2.dynamicreg.client'/>
+      <attribute name='bundle-version' type='Version' value='1.0.0'/>
+      <directive name='uses' value='org.apache.oltu.oauth2.common.exception,org.apache.oltu.oauth2.common.parameters,org.apache.oltu.oauth2.client.request,org.apache.oltu.oauth2.common.message'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.apache.oltu.oauth2.ext.dynamicreg.client.validators'/>
+      <attribute name='version' type='Version' value='1.0.0'/>
+      <attribute name='bundle-symbolic-name' value='org.apache.oltu.oauth2.dynamicreg.client'/>
+      <attribute name='bundle-version' type='Version' value='1.0.0'/>
+      <directive name='uses' value='org.apache.oltu.oauth2.common.exception,org.apache.oltu.oauth2.client.validator,org.apache.oltu.oauth2.common.utils,org.apache.oltu.oauth2.client.response'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.apache.oltu.oauth2.ext.dynamicreg.client.response'/>
+      <attribute name='version' type='Version' value='1.0.0'/>
+      <attribute name='bundle-symbolic-name' value='org.apache.oltu.oauth2.dynamicreg.client'/>
+      <attribute name='bundle-version' type='Version' value='1.0.0'/>
+      <directive name='uses' value='org.apache.oltu.oauth2.common.exception,org.apache.oltu.oauth2.client.validator,org.apache.oltu.oauth2.ext.dynamicreg.client.validators,org.apache.oltu.oauth2.common.utils,org.apache.oltu.oauth2.client.response'/>
+    </capability>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.apache.oltu.oauth2.client)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.apache.oltu.oauth2.client.request)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.apache.oltu.oauth2.client.response)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.apache.oltu.oauth2.client.validator)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.apache.oltu.oauth2.common.exception)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.apache.oltu.oauth2.common.message)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.apache.oltu.oauth2.common.parameters)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.apache.oltu.oauth2.common.utils)'/>
     </requirement>
   </resource>
   <resource>
@@ -3851,6 +4366,51 @@
     </requirement>
     <requirement namespace='osgi.wiring.package'>
       <directive name='filter' value='(osgi.wiring.package=javax.inject)'/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace='osgi.identity'>
+      <attribute name='osgi.identity' value='org.apache.felix.webconsole.plugins.packageadmin'/>
+      <attribute name='type' value='osgi.bundle'/>
+      <attribute name='version' type='Version' value='1.0.0'/>
+    </capability>
+    <capability namespace='osgi.content'>
+      <attribute name='osgi.content' value='e90c00f54301870724e7a0204e9d57ae81931c3108e81ecd12c25d15e2603b54'/>
+      <attribute name='url' value='org.apache.felix.webconsole.plugins.packageadmin/org.apache.felix.webconsole.plugins.packageadmin-1.0.0.jar'/>
+      <attribute name='size' type='Long' value='26195'/>
+      <attribute name='mime' value='application/vnd.osgi.bundle'/>
+    </capability>
+    <capability namespace='osgi.wiring.bundle'>
+      <attribute name='osgi.wiring.bundle' value='org.apache.felix.webconsole.plugins.packageadmin'/>
+      <attribute name='bundle-version' type='Version' value='1.0.0'/>
+    </capability>
+    <capability namespace='osgi.wiring.host'>
+      <attribute name='osgi.wiring.host' value='org.apache.felix.webconsole.plugins.packageadmin'/>
+      <attribute name='bundle-version' type='Version' value='1.0.0'/>
+    </capability>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.servlet)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.servlet.http)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.commons.io)(version&gt;=1.4.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.felix.webconsole)(version&gt;=3.1.0)(!(version&gt;=4.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.json)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.osgi.framework)(version&gt;=1.3.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.osgi.service.packageadmin)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.osgi.util.tracker)(version&gt;=1.3.0)(!(version&gt;=2.0.0)))'/>
     </requirement>
   </resource>
   <resource>
@@ -4543,6 +5103,148 @@
   </resource>
   <resource>
     <capability namespace='osgi.identity'>
+      <attribute name='osgi.identity' value='org.apache.oltu.oauth2.dynamicreg.server'/>
+      <attribute name='type' value='osgi.bundle'/>
+      <attribute name='version' type='Version' value='1.0.0'/>
+    </capability>
+    <capability namespace='osgi.content'>
+      <attribute name='osgi.content' value='9cc611f3376745d114b5a731b1045dc06198cb851bdce68664929e487320f577'/>
+      <attribute name='url' value='org.apache.oltu.oauth2.dynamicreg.server/org.apache.oltu.oauth2.dynamicreg.server-1.0.0.jar'/>
+      <attribute name='size' type='Long' value='16909'/>
+      <attribute name='mime' value='application/vnd.osgi.bundle'/>
+    </capability>
+    <capability namespace='osgi.wiring.bundle'>
+      <attribute name='osgi.wiring.bundle' value='org.apache.oltu.oauth2.dynamicreg.server'/>
+      <attribute name='bundle-version' type='Version' value='1.0.0'/>
+    </capability>
+    <capability namespace='osgi.wiring.host'>
+      <attribute name='osgi.wiring.host' value='org.apache.oltu.oauth2.dynamicreg.server'/>
+      <attribute name='bundle-version' type='Version' value='1.0.0'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.apache.oltu.oauth2.ext.dynamicreg.server.request'/>
+      <attribute name='version' type='Version' value='1.0.0'/>
+      <attribute name='bundle-symbolic-name' value='org.apache.oltu.oauth2.dynamicreg.server'/>
+      <attribute name='bundle-version' type='Version' value='1.0.0'/>
+      <directive name='uses' value='org.apache.oltu.oauth2.common.exception,javax.servlet,org.apache.oltu.oauth2.common.utils,org.json,org.slf4j,javax.servlet.http,org.apache.oltu.oauth2.common.validators,org.apache.oltu.oauth2.ext.dynamicreg.server.validator,org.apache.oltu.oauth2.as.request'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.apache.oltu.oauth2.ext.dynamicreg.server.response'/>
+      <attribute name='version' type='Version' value='1.0.0'/>
+      <attribute name='bundle-symbolic-name' value='org.apache.oltu.oauth2.dynamicreg.server'/>
+      <attribute name='bundle-version' type='Version' value='1.0.0'/>
+      <directive name='uses' value='org.apache.oltu.oauth2.common.message,org.apache.oltu.oauth2.as.response'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.apache.oltu.oauth2.ext.dynamicreg.server.validator'/>
+      <attribute name='version' type='Version' value='1.0.0'/>
+      <attribute name='bundle-symbolic-name' value='org.apache.oltu.oauth2.dynamicreg.server'/>
+      <attribute name='bundle-version' type='Version' value='1.0.0'/>
+      <directive name='uses' value='org.apache.oltu.oauth2.common.exception,org.apache.oltu.oauth2.ext.dynamicreg.server.request,org.apache.oltu.oauth2.common.validators,org.apache.oltu.oauth2.common.utils,org.slf4j,javax.servlet.http'/>
+    </capability>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.servlet)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.servlet.http)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.apache.oltu.oauth2.as.request)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.apache.oltu.oauth2.as.response)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.apache.oltu.oauth2.common.exception)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.apache.oltu.oauth2.common.message)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.apache.oltu.oauth2.common.utils)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.apache.oltu.oauth2.common.validators)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.json)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.slf4j)'/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace='osgi.identity'>
+      <attribute name='osgi.identity' value='org.apache.oltu.oauth2.authzserver'/>
+      <attribute name='type' value='osgi.bundle'/>
+      <attribute name='version' type='Version' value='1.0.0'/>
+    </capability>
+    <capability namespace='osgi.content'>
+      <attribute name='osgi.content' value='c4a3bb8490ed84351034738547feea6a917a1d94619466d1f006a24717b4501d'/>
+      <attribute name='url' value='org.apache.oltu.oauth2.authzserver/org.apache.oltu.oauth2.authzserver-1.0.0.jar'/>
+      <attribute name='size' type='Long' value='30087'/>
+      <attribute name='mime' value='application/vnd.osgi.bundle'/>
+    </capability>
+    <capability namespace='osgi.wiring.bundle'>
+      <attribute name='osgi.wiring.bundle' value='org.apache.oltu.oauth2.authzserver'/>
+      <attribute name='bundle-version' type='Version' value='1.0.0'/>
+    </capability>
+    <capability namespace='osgi.wiring.host'>
+      <attribute name='osgi.wiring.host' value='org.apache.oltu.oauth2.authzserver'/>
+      <attribute name='bundle-version' type='Version' value='1.0.0'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.apache.oltu.oauth2.as.response'/>
+      <attribute name='version' type='Version' value='1.0.0'/>
+      <attribute name='bundle-symbolic-name' value='org.apache.oltu.oauth2.authzserver'/>
+      <attribute name='bundle-version' type='Version' value='1.0.0'/>
+      <directive name='uses' value='org.apache.oltu.oauth2.common.message,javax.servlet.http'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.apache.oltu.oauth2.as.issuer'/>
+      <attribute name='version' type='Version' value='1.0.0'/>
+      <attribute name='bundle-symbolic-name' value='org.apache.oltu.oauth2.authzserver'/>
+      <attribute name='bundle-version' type='Version' value='1.0.0'/>
+      <directive name='uses' value='org.apache.oltu.oauth2.common.exception'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.apache.oltu.oauth2.as.validator'/>
+      <attribute name='version' type='Version' value='1.0.0'/>
+      <attribute name='bundle-symbolic-name' value='org.apache.oltu.oauth2.authzserver'/>
+      <attribute name='bundle-version' type='Version' value='1.0.0'/>
+      <directive name='uses' value='org.apache.oltu.oauth2.common.validators,org.apache.oltu.oauth2.common.exception,javax.servlet.http'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.apache.oltu.oauth2.as.request'/>
+      <attribute name='version' type='Version' value='1.0.0'/>
+      <attribute name='bundle-symbolic-name' value='org.apache.oltu.oauth2.authzserver'/>
+      <attribute name='bundle-version' type='Version' value='1.0.0'/>
+      <directive name='uses' value='org.apache.oltu.oauth2.common.exception,org.apache.oltu.oauth2.common.validators,org.apache.oltu.oauth2.common.utils,javax.servlet.http,org.apache.oltu.oauth2.common.message.types,org.apache.oltu.oauth2.as.validator,org.slf4j'/>
+    </capability>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.servlet.http)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.apache.oltu.oauth2.common.exception)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.apache.oltu.oauth2.common.message)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.apache.oltu.oauth2.common.message.types)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.apache.oltu.oauth2.common.utils)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.apache.oltu.oauth2.common.validators)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.slf4j)'/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace='osgi.identity'>
       <attribute name='osgi.identity' value='org.glassfish.jersey.core.jersey-common'/>
       <attribute name='type' value='osgi.bundle'/>
       <attribute name='version' type='Version' value='2.4.1'/>
@@ -5105,104 +5807,86 @@
   </resource>
   <resource>
     <capability namespace='osgi.identity'>
-      <attribute name='osgi.identity' value='org.objectweb.asm.all.debug'/>
+      <attribute name='osgi.identity' value='org.apache.felix.webconsole'/>
       <attribute name='type' value='osgi.bundle'/>
-      <attribute name='version' type='Version' value='5.0.2'/>
+      <attribute name='version' type='Version' value='4.2.2'/>
     </capability>
     <capability namespace='osgi.content'>
-      <attribute name='osgi.content' value='197624b09f50d166dc0c06e448950ec40b282b7c22d676b89480041c26e8fbd7'/>
-      <attribute name='url' value='org.objectweb.asm.all.debug/org.objectweb.asm.all.debug-5.0.2.jar'/>
-      <attribute name='size' type='Long' value='380313'/>
+      <attribute name='osgi.content' value='3d2518f226e4343028a6e24532a67e4949d7313bfc5bd80798f7384fb644cf21'/>
+      <attribute name='url' value='org.apache.felix.webconsole/org.apache.felix.webconsole-4.2.2.jar'/>
+      <attribute name='size' type='Long' value='447954'/>
       <attribute name='mime' value='application/vnd.osgi.bundle'/>
     </capability>
     <capability namespace='osgi.wiring.bundle'>
-      <attribute name='osgi.wiring.bundle' value='org.objectweb.asm.all.debug'/>
-      <attribute name='bundle-version' type='Version' value='5.0.2'/>
+      <attribute name='osgi.wiring.bundle' value='org.apache.felix.webconsole'/>
+      <attribute name='bundle-version' type='Version' value='4.2.2'/>
     </capability>
     <capability namespace='osgi.wiring.host'>
-      <attribute name='osgi.wiring.host' value='org.objectweb.asm.all.debug'/>
-      <attribute name='bundle-version' type='Version' value='5.0.2'/>
+      <attribute name='osgi.wiring.host' value='org.apache.felix.webconsole'/>
+      <attribute name='bundle-version' type='Version' value='4.2.2'/>
     </capability>
     <capability namespace='osgi.wiring.package'>
-      <attribute name='osgi.wiring.package' value='org.objectweb.asm.signature'/>
-      <attribute name='version' type='Version' value='5.0.2'/>
-      <attribute name='bundle-symbolic-name' value='org.objectweb.asm.all.debug'/>
-      <attribute name='bundle-version' type='Version' value='5.0.2'/>
-      <directive name='uses' value='org.objectweb.asm'/>
+      <attribute name='osgi.wiring.package' value='org.apache.felix.webconsole'/>
+      <attribute name='version' type='Version' value='3.1.3'/>
+      <attribute name='bundle-symbolic-name' value='org.apache.felix.webconsole'/>
+      <attribute name='bundle-version' type='Version' value='4.2.2'/>
+      <directive name='uses' value='javax.servlet,org.osgi.framework,org.apache.commons.io,javax.servlet.http,org.osgi.util.tracker,org.apache.commons.fileupload.disk,org.apache.commons.fileupload,org.apache.commons.fileupload.servlet,org.json'/>
     </capability>
     <capability namespace='osgi.wiring.package'>
-      <attribute name='osgi.wiring.package' value='org.objectweb.asm.commons'/>
-      <attribute name='version' type='Version' value='5.0.2'/>
-      <attribute name='bundle-symbolic-name' value='org.objectweb.asm.all.debug'/>
-      <attribute name='bundle-version' type='Version' value='5.0.2'/>
-      <directive name='uses' value='org.objectweb.asm,org.objectweb.asm.tree,org.objectweb.asm.signature'/>
+      <attribute name='osgi.wiring.package' value='org.apache.felix.webconsole.bundleinfo'/>
+      <attribute name='version' type='Version' value='1.0.0'/>
+      <attribute name='bundle-symbolic-name' value='org.apache.felix.webconsole'/>
+      <attribute name='bundle-version' type='Version' value='4.2.2'/>
+      <directive name='uses' value='org.osgi.framework'/>
     </capability>
     <capability namespace='osgi.wiring.package'>
-      <attribute name='osgi.wiring.package' value='org.objectweb.asm.attrs'/>
-      <attribute name='version' type='Version' value='5.0.2'/>
-      <attribute name='bundle-symbolic-name' value='org.objectweb.asm.all.debug'/>
-      <attribute name='bundle-version' type='Version' value='5.0.2'/>
-    </capability>
-    <capability namespace='osgi.wiring.package'>
-      <attribute name='osgi.wiring.package' value='org.objectweb.asm.util'/>
-      <attribute name='version' type='Version' value='5.0.2'/>
-      <attribute name='bundle-symbolic-name' value='org.objectweb.asm.all.debug'/>
-      <attribute name='bundle-version' type='Version' value='5.0.2'/>
-      <directive name='uses' value='org.objectweb.asm,org.objectweb.asm.tree.analysis,org.objectweb.asm.tree,org.objectweb.asm.signature'/>
-    </capability>
-    <capability namespace='osgi.wiring.package'>
-      <attribute name='osgi.wiring.package' value='org.objectweb.asm.tree.analysis'/>
-      <attribute name='version' type='Version' value='5.0.2'/>
-      <attribute name='bundle-symbolic-name' value='org.objectweb.asm.all.debug'/>
-      <attribute name='bundle-version' type='Version' value='5.0.2'/>
-      <directive name='uses' value='org.objectweb.asm,org.objectweb.asm.tree'/>
-    </capability>
-    <capability namespace='osgi.wiring.package'>
-      <attribute name='osgi.wiring.package' value='org.objectweb.asm'/>
-      <attribute name='version' type='Version' value='5.0.2'/>
-      <attribute name='bundle-symbolic-name' value='org.objectweb.asm.all.debug'/>
-      <attribute name='bundle-version' type='Version' value='5.0.2'/>
-    </capability>
-    <capability namespace='osgi.wiring.package'>
-      <attribute name='osgi.wiring.package' value='org.objectweb.asm.xml'/>
-      <attribute name='version' type='Version' value='5.0.2'/>
-      <attribute name='bundle-symbolic-name' value='org.objectweb.asm.all.debug'/>
-      <attribute name='bundle-version' type='Version' value='5.0.2'/>
-      <directive name='uses' value='org.xml.sax,org.objectweb.asm,org.xml.sax.helpers,org.xml.sax.ext,javax.xml.transform.sax,javax.xml.transform,javax.xml.transform.stream,org.objectweb.asm.util'/>
-    </capability>
-    <capability namespace='osgi.wiring.package'>
-      <attribute name='osgi.wiring.package' value='org.objectweb.asm.tree'/>
-      <attribute name='version' type='Version' value='5.0.2'/>
-      <attribute name='bundle-symbolic-name' value='org.objectweb.asm.all.debug'/>
-      <attribute name='bundle-version' type='Version' value='5.0.2'/>
-      <directive name='uses' value='org.objectweb.asm'/>
+      <attribute name='osgi.wiring.package' value='org.apache.felix.webconsole.i18n'/>
+      <attribute name='version' type='Version' value='1.0.0'/>
+      <attribute name='bundle-symbolic-name' value='org.apache.felix.webconsole'/>
+      <attribute name='bundle-version' type='Version' value='4.2.2'/>
+      <directive name='uses' value='org.osgi.framework'/>
     </capability>
     <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(osgi.wiring.package=javax.xml.transform)'/>
-      <directive name='resolution' value='optional'/>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=javax.servlet)(version&gt;=2.4.0))'/>
     </requirement>
     <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(osgi.wiring.package=javax.xml.transform.sax)'/>
-      <directive name='resolution' value='optional'/>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=javax.servlet.http)(version&gt;=2.4.0))'/>
     </requirement>
     <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(osgi.wiring.package=javax.xml.transform.stream)'/>
-      <directive name='resolution' value='optional'/>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.commons.fileupload)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))'/>
     </requirement>
     <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(osgi.wiring.package=org.xml.sax)'/>
-      <directive name='resolution' value='optional'/>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.commons.fileupload.disk)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))'/>
     </requirement>
     <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(osgi.wiring.package=org.xml.sax.ext)'/>
-      <directive name='resolution' value='optional'/>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.commons.fileupload.servlet)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))'/>
     </requirement>
     <requirement namespace='osgi.wiring.package'>
-      <directive name='filter' value='(osgi.wiring.package=org.xml.sax.helpers)'/>
-      <directive name='resolution' value='optional'/>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.commons.io)(version&gt;=1.4.0)(!(version&gt;=3.0.0)))'/>
     </requirement>
-    <requirement namespace='osgi.ee'>
-      <directive name='filter' value='(osgi.ee=J2SE-1.5)'/>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.felix.webconsole)(version&gt;=3.1.0)(!(version&gt;=3.2.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.felix.webconsole.bundleinfo)(version&gt;=1.0.0)(!(version&gt;=1.1.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.json)(version&gt;=0.0.0))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.osgi.framework)(version&gt;=1.4.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.osgi.service.http)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.osgi.service.packageadmin)(version&gt;=1.2.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.osgi.service.startlevel)(version&gt;=1.1.0)(!(version&gt;=2.0.0)))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.osgi.util.tracker)(version&gt;=1.3.0)(!(version&gt;=2.0.0)))'/>
     </requirement>
   </resource>
   <resource>
@@ -5323,6 +6007,108 @@
   </resource>
   <resource>
     <capability namespace='osgi.identity'>
+      <attribute name='osgi.identity' value='org.objectweb.asm.all.debug'/>
+      <attribute name='type' value='osgi.bundle'/>
+      <attribute name='version' type='Version' value='5.0.2'/>
+    </capability>
+    <capability namespace='osgi.content'>
+      <attribute name='osgi.content' value='197624b09f50d166dc0c06e448950ec40b282b7c22d676b89480041c26e8fbd7'/>
+      <attribute name='url' value='org.objectweb.asm.all.debug/org.objectweb.asm.all.debug-5.0.2.jar'/>
+      <attribute name='size' type='Long' value='380313'/>
+      <attribute name='mime' value='application/vnd.osgi.bundle'/>
+    </capability>
+    <capability namespace='osgi.wiring.bundle'>
+      <attribute name='osgi.wiring.bundle' value='org.objectweb.asm.all.debug'/>
+      <attribute name='bundle-version' type='Version' value='5.0.2'/>
+    </capability>
+    <capability namespace='osgi.wiring.host'>
+      <attribute name='osgi.wiring.host' value='org.objectweb.asm.all.debug'/>
+      <attribute name='bundle-version' type='Version' value='5.0.2'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.objectweb.asm.signature'/>
+      <attribute name='version' type='Version' value='5.0.2'/>
+      <attribute name='bundle-symbolic-name' value='org.objectweb.asm.all.debug'/>
+      <attribute name='bundle-version' type='Version' value='5.0.2'/>
+      <directive name='uses' value='org.objectweb.asm'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.objectweb.asm.commons'/>
+      <attribute name='version' type='Version' value='5.0.2'/>
+      <attribute name='bundle-symbolic-name' value='org.objectweb.asm.all.debug'/>
+      <attribute name='bundle-version' type='Version' value='5.0.2'/>
+      <directive name='uses' value='org.objectweb.asm,org.objectweb.asm.tree,org.objectweb.asm.signature'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.objectweb.asm.attrs'/>
+      <attribute name='version' type='Version' value='5.0.2'/>
+      <attribute name='bundle-symbolic-name' value='org.objectweb.asm.all.debug'/>
+      <attribute name='bundle-version' type='Version' value='5.0.2'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.objectweb.asm.util'/>
+      <attribute name='version' type='Version' value='5.0.2'/>
+      <attribute name='bundle-symbolic-name' value='org.objectweb.asm.all.debug'/>
+      <attribute name='bundle-version' type='Version' value='5.0.2'/>
+      <directive name='uses' value='org.objectweb.asm,org.objectweb.asm.tree.analysis,org.objectweb.asm.tree,org.objectweb.asm.signature'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.objectweb.asm.tree.analysis'/>
+      <attribute name='version' type='Version' value='5.0.2'/>
+      <attribute name='bundle-symbolic-name' value='org.objectweb.asm.all.debug'/>
+      <attribute name='bundle-version' type='Version' value='5.0.2'/>
+      <directive name='uses' value='org.objectweb.asm,org.objectweb.asm.tree'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.objectweb.asm'/>
+      <attribute name='version' type='Version' value='5.0.2'/>
+      <attribute name='bundle-symbolic-name' value='org.objectweb.asm.all.debug'/>
+      <attribute name='bundle-version' type='Version' value='5.0.2'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.objectweb.asm.xml'/>
+      <attribute name='version' type='Version' value='5.0.2'/>
+      <attribute name='bundle-symbolic-name' value='org.objectweb.asm.all.debug'/>
+      <attribute name='bundle-version' type='Version' value='5.0.2'/>
+      <directive name='uses' value='org.xml.sax,org.objectweb.asm,org.xml.sax.helpers,org.xml.sax.ext,javax.xml.transform.sax,javax.xml.transform,javax.xml.transform.stream,org.objectweb.asm.util'/>
+    </capability>
+    <capability namespace='osgi.wiring.package'>
+      <attribute name='osgi.wiring.package' value='org.objectweb.asm.tree'/>
+      <attribute name='version' type='Version' value='5.0.2'/>
+      <attribute name='bundle-symbolic-name' value='org.objectweb.asm.all.debug'/>
+      <attribute name='bundle-version' type='Version' value='5.0.2'/>
+      <directive name='uses' value='org.objectweb.asm'/>
+    </capability>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.xml.transform)'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.xml.transform.sax)'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.xml.transform.stream)'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.xml.sax)'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.xml.sax.ext)'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.xml.sax.helpers)'/>
+      <directive name='resolution' value='optional'/>
+    </requirement>
+    <requirement namespace='osgi.ee'>
+      <directive name='filter' value='(osgi.ee=J2SE-1.5)'/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace='osgi.identity'>
       <attribute name='osgi.identity' value='org.glassfish.jersey.bundles.repackaged.jersey-guava'/>
       <attribute name='type' value='osgi.bundle'/>
       <attribute name='version' type='Version' value='2.13.0'/>
@@ -5415,6 +6201,45 @@
     <requirement namespace='osgi.wiring.package'>
       <directive name='filter' value='(osgi.wiring.package=sun.misc)'/>
       <directive name='resolution' value='optional'/>
+    </requirement>
+  </resource>
+  <resource>
+    <capability namespace='osgi.identity'>
+      <attribute name='osgi.identity' value='org.apache.felix.webconsole.plugins.obr'/>
+      <attribute name='type' value='osgi.bundle'/>
+      <attribute name='version' type='Version' value='1.0.2'/>
+    </capability>
+    <capability namespace='osgi.content'>
+      <attribute name='osgi.content' value='6cc51620617d10bb7912d527e010aed69076f2ec6077933341b15d525f2ed5f8'/>
+      <attribute name='url' value='org.apache.felix.webconsole.plugins.obr/org.apache.felix.webconsole.plugins.obr-1.0.2.jar'/>
+      <attribute name='size' type='Long' value='41142'/>
+      <attribute name='mime' value='application/vnd.osgi.bundle'/>
+    </capability>
+    <capability namespace='osgi.wiring.bundle'>
+      <attribute name='osgi.wiring.bundle' value='org.apache.felix.webconsole.plugins.obr'/>
+      <attribute name='bundle-version' type='Version' value='1.0.2'/>
+    </capability>
+    <capability namespace='osgi.wiring.host'>
+      <attribute name='osgi.wiring.host' value='org.apache.felix.webconsole.plugins.obr'/>
+      <attribute name='bundle-version' type='Version' value='1.0.2'/>
+    </capability>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.servlet)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=javax.servlet.http)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.apache.felix.webconsole)(version&gt;=3.0.0))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(osgi.wiring.package=org.json)'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.osgi.framework)(version&gt;=1.3.0))'/>
+    </requirement>
+    <requirement namespace='osgi.wiring.package'>
+      <directive name='filter' value='(&amp;(osgi.wiring.package=org.osgi.util.tracker)(version&gt;=1.3.0))'/>
     </requirement>
   </resource>
   <resource>
